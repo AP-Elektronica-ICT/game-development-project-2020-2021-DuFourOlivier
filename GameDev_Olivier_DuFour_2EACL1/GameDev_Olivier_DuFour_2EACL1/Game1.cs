@@ -1,6 +1,7 @@
 ﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
+using System;
 
 namespace GameDev_Olivier_DuFour_2EACL1
 {
@@ -10,8 +11,8 @@ namespace GameDev_Olivier_DuFour_2EACL1
         private SpriteBatch _spriteBatch;
 
         private Texture2D texture;
-        private Rectangle deelRectangle;
-        private int schuifOp_X = 0;
+        Player player;
+       
         public Game1()
         {
             _graphics = new GraphicsDeviceManager(this);
@@ -23,7 +24,7 @@ namespace GameDev_Olivier_DuFour_2EACL1
         {
             // TODO: Add your initialization logic here
 
-            deelRectangle = new Rectangle(schuifOp_X, 0, 108, 140);
+            
 
             base.Initialize();
         }
@@ -33,7 +34,14 @@ namespace GameDev_Olivier_DuFour_2EACL1
             _spriteBatch = new SpriteBatch(GraphicsDevice);
             texture = Content.Load<Texture2D>("character");
 
+            InitializeGameObjects();
+
             // TODO: use this.Content to load your game content here
+        }
+
+        private void InitializeGameObjects()
+        {
+            player = new Player(texture);
         }
 
         protected override void Update(GameTime gameTime)
@@ -42,6 +50,7 @@ namespace GameDev_Olivier_DuFour_2EACL1
                 Exit();
 
             // TODO: Add your update logic here
+            player.Update();
 
             base.Update(gameTime);
         }
@@ -52,15 +61,10 @@ namespace GameDev_Olivier_DuFour_2EACL1
 
             // TODO: Add your drawing code here
             _spriteBatch.Begin();
-            _spriteBatch.Draw(texture,new Vector2(10,10),deelRectangle,Color.White);
+            player.Draw(_spriteBatch);
+            
             _spriteBatch.End();
 
-            schuifOp_X += 108;
-            if (schuifOp_X >756)
-            {
-                schuifOp_X = 0;
-            }
-            deelRectangle.X = schuifOp_X;
             base.Draw(gameTime);
         }
     }
