@@ -9,6 +9,9 @@ namespace GameDev_Olivier_DuFour_2EACL1
         private GraphicsDeviceManager _graphics;
         private SpriteBatch _spriteBatch;
 
+        private Texture2D texture;
+        private Rectangle deelRectangle;
+        private int schuifOp_X = 0;
         public Game1()
         {
             _graphics = new GraphicsDeviceManager(this);
@@ -20,12 +23,15 @@ namespace GameDev_Olivier_DuFour_2EACL1
         {
             // TODO: Add your initialization logic here
 
+            deelRectangle = new Rectangle(schuifOp_X, 0, 108, 140);
+
             base.Initialize();
         }
 
         protected override void LoadContent()
         {
             _spriteBatch = new SpriteBatch(GraphicsDevice);
+            texture = Content.Load<Texture2D>("character");
 
             // TODO: use this.Content to load your game content here
         }
@@ -45,7 +51,16 @@ namespace GameDev_Olivier_DuFour_2EACL1
             GraphicsDevice.Clear(Color.CornflowerBlue);
 
             // TODO: Add your drawing code here
+            _spriteBatch.Begin();
+            _spriteBatch.Draw(texture,new Vector2(10,10),deelRectangle,Color.White);
+            _spriteBatch.End();
 
+            schuifOp_X += 108;
+            if (schuifOp_X >756)
+            {
+                schuifOp_X = 0;
+            }
+            deelRectangle.X = schuifOp_X;
             base.Draw(gameTime);
         }
     }
