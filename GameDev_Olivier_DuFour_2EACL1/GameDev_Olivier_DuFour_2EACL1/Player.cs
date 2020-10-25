@@ -1,4 +1,5 @@
-﻿using GameDev_Olivier_DuFour_2EACL1.Interfaces;
+﻿using GameDev_Olivier_DuFour_2EACL1.Animation;
+using GameDev_Olivier_DuFour_2EACL1.Interfaces;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using System;
@@ -10,27 +11,30 @@ namespace GameDev_Olivier_DuFour_2EACL1
     public class Player:IGameObject
     {
         Texture2D playerTexture;
-        private Rectangle deelRectangle;
-        private int schuifOp_X = 0;
+        Animatie animatie;
+       
         public Player(Texture2D text)
         {
             playerTexture = text;
-            deelRectangle = new Rectangle(schuifOp_X, 0, 108, 140);
+            animatie = new Animatie();
+            animatie.AddFrame(new AnimationFrame(new Rectangle(0, 0, 108, 140)));
+            animatie.AddFrame(new AnimationFrame(new Rectangle(108, 0, 108, 140)));
+            animatie.AddFrame(new AnimationFrame(new Rectangle(216, 0, 108, 140)));
+            animatie.AddFrame(new AnimationFrame(new Rectangle(324, 0, 108, 140)));
+            animatie.AddFrame(new AnimationFrame(new Rectangle(432, 0, 108, 140)));
+            animatie.AddFrame(new AnimationFrame(new Rectangle(540, 0, 108, 140)));
+            animatie.AddFrame(new AnimationFrame(new Rectangle(648, 0, 108, 140)));
+            animatie.AddFrame(new AnimationFrame(new Rectangle(756, 0, 108, 140)));
         }
 
         public void Update()
         {
-            schuifOp_X += 108;
-            if (schuifOp_X > 756)
-            {
-                schuifOp_X = 0;
-            }
-            deelRectangle.X = schuifOp_X;
+            animatie.Update();
         }
 
         public void Draw(SpriteBatch _spriteBatch)
         {
-            _spriteBatch.Draw(playerTexture, new Vector2(10, 10), deelRectangle, Color.White);
+            _spriteBatch.Draw(playerTexture, new Vector2(10, 10),animatie.CurrentFrame.SourceRectangle , Color.White);
         }
     }
 }
