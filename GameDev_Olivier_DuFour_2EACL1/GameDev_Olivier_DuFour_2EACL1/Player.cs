@@ -17,6 +17,7 @@ namespace GameDev_Olivier_DuFour_2EACL1
         {
             playerTexture = text;
             animatie = new Animatie();
+            //Move to the right
             animatie.AddFrame(new AnimationFrame(new Rectangle(0, 0, 108, 140)));
             animatie.AddFrame(new AnimationFrame(new Rectangle(108, 0, 108, 140)));
             animatie.AddFrame(new AnimationFrame(new Rectangle(216, 0, 108, 140)));
@@ -25,6 +26,16 @@ namespace GameDev_Olivier_DuFour_2EACL1
             animatie.AddFrame(new AnimationFrame(new Rectangle(540, 0, 108, 140)));
             animatie.AddFrame(new AnimationFrame(new Rectangle(648, 0, 108, 140)));
             animatie.AddFrame(new AnimationFrame(new Rectangle(756, 0, 108, 140)));
+
+            //Move to the left
+            //animatie.AddFrame(new AnimationFrame(new Rectangle(0, 140, 108, 140)));
+            //animatie.AddFrame(new AnimationFrame(new Rectangle(108, 140, 108, 140)));
+            //animatie.AddFrame(new AnimationFrame(new Rectangle(216, 140, 108, 140)));
+            //animatie.AddFrame(new AnimationFrame(new Rectangle(324, 140, 108, 140)));
+            //animatie.AddFrame(new AnimationFrame(new Rectangle(432, 140, 108, 140)));
+            //animatie.AddFrame(new AnimationFrame(new Rectangle(540, 140, 108, 140)));
+            //animatie.AddFrame(new AnimationFrame(new Rectangle(648, 140, 108, 140)));
+            //animatie.AddFrame(new AnimationFrame(new Rectangle(756, 140, 108, 140)));
         }
 
         public void Update()
