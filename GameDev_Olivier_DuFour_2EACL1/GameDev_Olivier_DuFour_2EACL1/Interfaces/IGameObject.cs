@@ -1,4 +1,5 @@
-﻿using Microsoft.Xna.Framework.Graphics;
+﻿using Microsoft.Xna.Framework;
+using Microsoft.Xna.Framework.Graphics;
 using SharpDX.Direct3D9;
 using System;
 using System.Collections.Generic;
@@ -8,7 +9,7 @@ namespace GameDev_Olivier_DuFour_2EACL1.Interfaces
 {
     interface IGameObject
     {
-        void Update();
+        void Update(GameTime gameTime);
         void Draw(SpriteBatch _spriteBatch);
     }
 }

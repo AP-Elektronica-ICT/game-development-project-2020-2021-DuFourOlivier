@@ -38,14 +38,16 @@ namespace GameDev_Olivier_DuFour_2EACL1
             //animatie.AddFrame(new AnimationFrame(new Rectangle(756, 140, 108, 140)));
         }
 
-        public void Update()
+        public void Update(GameTime gameTime)
         {
-            animatie.Update();
+            animatie.Update(gameTime);
         }
 
         public void Draw(SpriteBatch _spriteBatch)
         {
             _spriteBatch.Draw(playerTexture, new Vector2(10, 10),animatie.CurrentFrame.SourceRectangle , Color.White);
         }
+
+       
     }
 }

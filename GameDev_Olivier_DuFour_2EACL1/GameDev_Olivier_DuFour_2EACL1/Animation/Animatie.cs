@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.Xna.Framework;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
@@ -11,6 +12,7 @@ namespace GameDev_Olivier_DuFour_2EACL1.Animation
         private List<AnimationFrame> frames;
 
         int counter;
+        private double frameMovement=0;
         public Animatie()
         {
             frames = new List<AnimationFrame>();
@@ -22,10 +24,17 @@ namespace GameDev_Olivier_DuFour_2EACL1.Animation
             CurrentFrame = frames[0];
         }
 
-        public void Update()
+        public void Update(GameTime gameTime)
         {
             CurrentFrame = frames[counter];
-            counter++;
+
+            frameMovement += CurrentFrame.SourceRectangle.Width * gameTime.ElapsedGameTime.TotalSeconds;
+            if (frameMovement>= CurrentFrame.SourceRectangle.Width/10)
+            {
+                counter++;
+                frameMovement = 0;
+            }
+            
 
             if (counter >=frames.Count)
             {

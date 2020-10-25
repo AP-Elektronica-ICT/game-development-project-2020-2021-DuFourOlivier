@@ -46,11 +46,12 @@ namespace GameDev_Olivier_DuFour_2EACL1
 
         protected override void Update(GameTime gameTime)
         {
+            
             if (GamePad.GetState(PlayerIndex.One).Buttons.Back == ButtonState.Pressed || Keyboard.GetState().IsKeyDown(Keys.Escape))
                 Exit();
 
             // TODO: Add your update logic here
-            player.Update();
+            player.Update(gameTime);
 
             base.Update(gameTime);
         }
