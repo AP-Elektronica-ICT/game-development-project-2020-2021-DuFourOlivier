@@ -1,4 +1,5 @@
-﻿using Microsoft.Xna.Framework;
+﻿using GameDev_Olivier_DuFour_2EACL1.Input;
+using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
 using System;
@@ -41,7 +42,7 @@ namespace GameDev_Olivier_DuFour_2EACL1
 
         private void InitializeGameObjects()
         {
-            player = new Player(texture);
+            player = new Player(texture, new KeyBoardReader());
         }
 
         protected override void Update(GameTime gameTime)
