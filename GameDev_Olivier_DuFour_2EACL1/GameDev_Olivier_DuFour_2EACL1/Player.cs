@@ -22,32 +22,33 @@ namespace GameDev_Olivier_DuFour_2EACL1
         {
             playerTexture = text;
             animatie = new Animatie();
-            
-            //if (MoveLeft==true)
-            //{
-            //    animatie.AddFrame(new AnimationFrame(new Rectangle(0, 140, 108, 140)));
-            //    animatie.AddFrame(new AnimationFrame(new Rectangle(108, 140, 108, 140)));
-            //    animatie.AddFrame(new AnimationFrame(new Rectangle(216, 140, 108, 140)));
-            //    animatie.AddFrame(new AnimationFrame(new Rectangle(324, 140, 108, 140)));
-            //    animatie.AddFrame(new AnimationFrame(new Rectangle(432, 140, 108, 140)));
-            //    animatie.AddFrame(new AnimationFrame(new Rectangle(540, 140, 108, 140)));
-            //    animatie.AddFrame(new AnimationFrame(new Rectangle(648, 140, 108, 140)));
-            //    animatie.AddFrame(new AnimationFrame(new Rectangle(756, 140, 108, 140)));
-            //}
-            //else
-            //{
+            //naar links
+            animatie.AddFrameWalkLeft(new AnimationFrame(new Rectangle(756, 140, 108, 140)));
+            animatie.AddFrameWalkLeft(new AnimationFrame(new Rectangle(648, 140, 108, 140)));
+            animatie.AddFrameWalkLeft(new AnimationFrame(new Rectangle(540, 140, 108, 140)));
+            animatie.AddFrameWalkLeft(new AnimationFrame(new Rectangle(432, 140, 108, 140)));
+            animatie.AddFrameWalkLeft(new AnimationFrame(new Rectangle(324, 140, 108, 140)));
+            animatie.AddFrameWalkLeft(new AnimationFrame(new Rectangle(216, 140, 108, 140)));
+            animatie.AddFrameWalkLeft(new AnimationFrame(new Rectangle(108, 140, 108, 140)));
+            animatie.AddFrameWalkLeft(new AnimationFrame(new Rectangle(0, 140, 108, 140)));
 
-            animatie.AddFrame(new AnimationFrame(new Rectangle(0, 0, 108, 140)));
-            animatie.AddFrame(new AnimationFrame(new Rectangle(108, 0, 108, 140)));
-            animatie.AddFrame(new AnimationFrame(new Rectangle(216, 0, 108, 140)));
-            animatie.AddFrame(new AnimationFrame(new Rectangle(324, 0, 108, 140)));
-            animatie.AddFrame(new AnimationFrame(new Rectangle(432, 0, 108, 140)));
-            animatie.AddFrame(new AnimationFrame(new Rectangle(540, 0, 108, 140)));
-            animatie.AddFrame(new AnimationFrame(new Rectangle(648, 0, 108, 140)));
-            animatie.AddFrame(new AnimationFrame(new Rectangle(756, 0, 108, 140)));
-
-            //}
             
+            //NAar rechts
+            animatie.AddFrameWalkRight(new AnimationFrame(new Rectangle(0, 0, 108, 140)));
+            animatie.AddFrameWalkRight(new AnimationFrame(new Rectangle(108, 0, 108, 140)));
+            animatie.AddFrameWalkRight(new AnimationFrame(new Rectangle(216, 0, 108, 140)));
+            animatie.AddFrameWalkRight(new AnimationFrame(new Rectangle(324, 0, 108, 140)));
+            animatie.AddFrameWalkRight(new AnimationFrame(new Rectangle(432, 0, 108, 140)));
+            animatie.AddFrameWalkRight(new AnimationFrame(new Rectangle(540, 0, 108, 140)));
+            animatie.AddFrameWalkRight(new AnimationFrame(new Rectangle(648, 0, 108, 140)));
+            animatie.AddFrameWalkRight(new AnimationFrame(new Rectangle(756, 0, 108, 140)));
+
+            animatie.AddFrameIdleRight(new AnimationFrame(new Rectangle(0, 0, 108, 140)));
+
+
+            animatie.AddFrameIdleLeft(new AnimationFrame(new Rectangle(756, 140, 108, 140)));
+
+
             positie = new Vector2(10, 365);
             snelheid = new Vector2(1, 1);
             this.inputReader = reader;
@@ -62,7 +63,7 @@ namespace GameDev_Olivier_DuFour_2EACL1
 
             var direction = inputReader.ReadInput();
             direction *= 4;
-            positie += direction;
+            positie += direction; 
             animatie.Update(gameTime);
         }
 
