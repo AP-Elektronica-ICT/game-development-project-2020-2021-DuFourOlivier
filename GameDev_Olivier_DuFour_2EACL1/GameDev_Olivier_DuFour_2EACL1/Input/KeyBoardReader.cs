@@ -10,8 +10,7 @@ namespace GameDev_Olivier_DuFour_2EACL1.Input
     class KeyBoardReader : IInputReader
     {
         public static bool WalkLeft=false;
-       
-        public static bool Idle=true;
+        public static bool Idle=false;
         public static bool PreviousState = false;
         
         public Microsoft.Xna.Framework.Vector2 ReadInput()
@@ -26,7 +25,7 @@ namespace GameDev_Olivier_DuFour_2EACL1.Input
                 PreviousState = true;
                 direction = new Vector2(-1, 0);
             }
-            if (state.IsKeyDown(Keys.Right))
+            else if (state.IsKeyDown(Keys.Right))
             {
                 
                 Idle = false;
@@ -37,7 +36,8 @@ namespace GameDev_Olivier_DuFour_2EACL1.Input
             else
             {
 
-               // Idle = true;
+               Idle = true;
+               
                 
             }
            
