@@ -34,11 +34,8 @@ namespace GameDev_Olivier_DuFour_2EACL1.Input
                 direction = new Vector2(1, 0);
             }
             else
-            {
-
+            { 
                Idle = true;
-               
-                
             }
            
             return direction;

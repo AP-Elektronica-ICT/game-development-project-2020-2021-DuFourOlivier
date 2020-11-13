@@ -14,7 +14,7 @@ namespace GameDev_Olivier_DuFour_2EACL1
     public class Player:IGameObject, ITransform
     {
        private Texture2D playerTexture;
-       private Animatie animatie;
+       private AnimatiePlayer animatie;
        private IInputReader inputReader;
        private IGameCommand moveCommand;
 
@@ -23,7 +23,7 @@ namespace GameDev_Olivier_DuFour_2EACL1
         public Player(Texture2D text, IInputReader reader)
         {
             playerTexture = text;
-            animatie = new Animatie();
+            animatie = new AnimatiePlayer();
             //naar links
             animatie.AddFrameWalkLeft(new AnimationFrame(new Rectangle(756, 140, 108, 140)));
             animatie.AddFrameWalkLeft(new AnimationFrame(new Rectangle(648, 140, 108, 140)));
@@ -58,8 +58,6 @@ namespace GameDev_Olivier_DuFour_2EACL1
 
         public void Update(GameTime gameTime)
         {
-
-
             var direction = inputReader.ReadInput();
             Move(direction);
             animatie.Update(gameTime);

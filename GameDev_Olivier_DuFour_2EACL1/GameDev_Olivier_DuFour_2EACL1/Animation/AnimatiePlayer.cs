@@ -7,24 +7,24 @@ using System.Text;
 
 namespace GameDev_Olivier_DuFour_2EACL1.Animation
 {
-   public class Animatie
+   public class AnimatiePlayer: Animation
     {
-        public AnimationFrame CurrentFrame { get; set; }
         
-
         private List<AnimationFrame> framesWalkRight;
         private List<AnimationFrame> framesWalkLeft;
         private List<AnimationFrame> framesIdleLeft;
         private List<AnimationFrame> framesIdleRight;
-
-        int counter;
-        private double frameMovement=0;
-        public Animatie()
+        
+        
+       
+        public AnimatiePlayer()
         {
             framesWalkRight = new List<AnimationFrame>();
             framesWalkLeft = new List<AnimationFrame>();
             framesIdleRight = new List<AnimationFrame>();
             framesIdleLeft = new List<AnimationFrame>();
+            counter = 0;
+            frameMovement = 0;
         }
 
         public void AddFrameWalkRight(AnimationFrame animationFrame)
@@ -48,7 +48,7 @@ namespace GameDev_Olivier_DuFour_2EACL1.Animation
             
         }
 
-        public void Update(GameTime gameTime)
+        public override void Update(GameTime gameTime)
         {
             /* De idle naar left blijft wanner we terug naar links begeven*/
             if (KeyBoardReader.WalkLeft==true)
