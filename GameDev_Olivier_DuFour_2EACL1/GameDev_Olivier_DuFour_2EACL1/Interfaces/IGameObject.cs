@@ -7,7 +7,7 @@ using System.Text;
 
 namespace GameDev_Olivier_DuFour_2EACL1.Interfaces
 {
-    interface IGameObject
+   public interface IGameObject
     {
         void Update(GameTime gameTime);
         void Draw(SpriteBatch _spriteBatch);

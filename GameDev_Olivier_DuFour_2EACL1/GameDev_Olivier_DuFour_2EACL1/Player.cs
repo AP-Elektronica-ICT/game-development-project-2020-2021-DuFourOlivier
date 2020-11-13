@@ -1,4 +1,5 @@
 ﻿using GameDev_Olivier_DuFour_2EACL1.Animation;
+using GameDev_Olivier_DuFour_2EACL1.Commands;
 using GameDev_Olivier_DuFour_2EACL1.Input;
 using GameDev_Olivier_DuFour_2EACL1.Interfaces;
 using Microsoft.Xna.Framework;
@@ -10,14 +11,15 @@ using System.Text;
 
 namespace GameDev_Olivier_DuFour_2EACL1
 {
-    public class Player:IGameObject
+    public class Player:IGameObject, ITransform
     {
-        Texture2D playerTexture;
-        Animatie animatie;
-        public Vector2 positie;
-        public Vector2 snelheid;
-        IInputReader inputReader;
-       
+       private Texture2D playerTexture;
+       private Animatie animatie;
+       private IInputReader inputReader;
+       private IGameCommand moveCommand;
+
+        public Vector2 Position { get ; set ; }
+
         public Player(Texture2D text, IInputReader reader)
         {
             playerTexture = text;
@@ -42,19 +44,16 @@ namespace GameDev_Olivier_DuFour_2EACL1
             animatie.AddFrameWalkRight(new AnimationFrame(new Rectangle(540, 0, 108, 140)));
             animatie.AddFrameWalkRight(new AnimationFrame(new Rectangle(648, 0, 108, 140)));
             animatie.AddFrameWalkRight(new AnimationFrame(new Rectangle(756, 0, 108, 140)));
-
+            //IdleRight
             animatie.AddFrameIdleRight(new AnimationFrame(new Rectangle(0, 0, 108, 140)));
 
-
+            //IdleLeft
             animatie.AddFrameIdleLeft(new AnimationFrame(new Rectangle(756, 140, 108, 140)));
 
 
-            positie = new Vector2(10, 365);
-            snelheid = new Vector2(1, 1);
+            Position = new Vector2(10, 365);
             this.inputReader = reader;
-
-
-
+            moveCommand = new MoveCommand();
         }
 
         public void Update(GameTime gameTime)
@@ -62,19 +61,18 @@ namespace GameDev_Olivier_DuFour_2EACL1
 
 
             var direction = inputReader.ReadInput();
-            direction *= 4;
-            positie += direction; 
+            Move(direction);
             animatie.Update(gameTime);
         }
 
-        private void Move()
+        private void Move(Vector2 direction)
         {
-            positie = positie + snelheid;
+            moveCommand.Execute(this, direction);
         }
 
         public void Draw(SpriteBatch _spriteBatch)
         {
-            _spriteBatch.Draw(playerTexture, positie,animatie.CurrentFrame.SourceRectangle , Color.White);
+            _spriteBatch.Draw(playerTexture, Position,animatie.CurrentFrame.SourceRectangle , Color.White);
         }
 
        
