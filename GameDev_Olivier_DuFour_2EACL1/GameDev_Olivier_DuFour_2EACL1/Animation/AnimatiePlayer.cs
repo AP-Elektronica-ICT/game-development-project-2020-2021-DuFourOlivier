@@ -75,7 +75,7 @@ namespace GameDev_Olivier_DuFour_2EACL1.Animation
         public override void Update(GameTime gameTime)
         {
             /* De idle naar left blijft wanner we terug naar links begeven*/
-            if (KeyBoardReader.WalkLeft==true)
+            if (KeyBoardReader.status=="Left")
             {
                 CurrentFrame = framesWalkLeft[counter];
 
@@ -92,7 +92,7 @@ namespace GameDev_Olivier_DuFour_2EACL1.Animation
                     counter = 0;
                 }
             }
-             if(KeyBoardReader.WalkLeft == false)
+             if(KeyBoardReader.status == "Right")
             {
             CurrentFrame = framesWalkRight[counter];
 
@@ -109,9 +109,9 @@ namespace GameDev_Olivier_DuFour_2EACL1.Animation
                 counter = 0;
             }
             }
-            if (KeyBoardReader.Idle==true)
+            if (KeyBoardReader.status=="Idle")
             {
-                if (KeyBoardReader.PreviousState==true)
+                if (KeyBoardReader.PreviousState=="Left")
                 {
                     CurrentFrame = framesIdleLeft[0];
                 }

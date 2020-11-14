@@ -9,9 +9,8 @@ namespace GameDev_Olivier_DuFour_2EACL1.Input
 {
     class KeyBoardReader : IInputReader
     {
-        public static bool WalkLeft=false;
-        public static bool Idle=false;
-        public static bool PreviousState = false;
+        public static string status="";
+        public static string PreviousState = "Right";
         
         public Microsoft.Xna.Framework.Vector2 ReadInput()
         {
@@ -20,22 +19,20 @@ namespace GameDev_Olivier_DuFour_2EACL1.Input
 
             if (state.IsKeyDown(Keys.Left))
             {
-                WalkLeft = true;
-                Idle = false;
-                PreviousState = true;
+                status = "Left";
+                PreviousState = "Left";
                 direction = new Vector2(-1, 0);
             }
             else if (state.IsKeyDown(Keys.Right))
             {
                 
-                Idle = false;
-                WalkLeft = false;
-                PreviousState = false;
+                status="Right";
+                PreviousState = "Right";
                 direction = new Vector2(1, 0);
             }
             else
-            { 
-               Idle = true;
+            {
+                status = "Idle";
             }
            
             return direction;
