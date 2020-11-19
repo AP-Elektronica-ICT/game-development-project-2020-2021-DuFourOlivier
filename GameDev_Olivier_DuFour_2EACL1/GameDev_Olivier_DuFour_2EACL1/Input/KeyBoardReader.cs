@@ -97,8 +97,8 @@ namespace GameDev_Olivier_DuFour_2EACL1.Input
            
             else if (jumping)
             {
-                //status = "Idle";
-                
+                status = "Idle";
+
                 direction.Y += jumpspeed;
 
                 jumpspeed += 0.5f;//Some math (explained later)
@@ -127,8 +127,21 @@ namespace GameDev_Olivier_DuFour_2EACL1.Input
             else
             {
                 status = "Idle";
+                if (!jumping)
+                {
+                    if (state.IsKeyDown(Keys.Space))
+                    {
+
+                        jumping = true;
+                        jumpspeed = -14;//Give it upward thrust
+                        player.Position = new Vector2(player.Position.X, startY);
+
+
+
+                    }
+                }
             }
-           
+
             return direction;
         }
         //public Microsoft.Xna.Framework.Vector2 Jump(Player player, bool jump)
