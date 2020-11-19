@@ -11,7 +11,7 @@ namespace GameDev_Olivier_DuFour_2EACL1.Commands
         public Vector2 speed;
         public MoveCommand()
         {
-            this.speed = new Vector2(4, 0);
+            this.speed = new Vector2(4, 2);
         }
         public void Execute(ITransform transform, Vector2 direcrtion)
         {

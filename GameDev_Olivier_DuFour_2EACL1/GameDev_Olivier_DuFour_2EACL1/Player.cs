@@ -8,6 +8,7 @@ using Microsoft.Xna.Framework.Input;
 using System;
 using System.Collections.Generic;
 using System.Text;
+using System.Diagnostics;
 
 namespace GameDev_Olivier_DuFour_2EACL1
 {
@@ -31,7 +32,8 @@ namespace GameDev_Olivier_DuFour_2EACL1
 
         public void Update(GameTime gameTime)
         {
-            var direction = inputReader.ReadInput();
+            var direction = inputReader.ReadInput(this);
+            Debug.WriteLine(direction);
             Move(direction);
             animatie.Update(gameTime);
         }

@@ -7,6 +7,6 @@ namespace GameDev_Olivier_DuFour_2EACL1.Input
 {
     public interface IInputReader
     {
-        Vector2 ReadInput();
+        Vector2 ReadInput(Player player);
     }
 }
