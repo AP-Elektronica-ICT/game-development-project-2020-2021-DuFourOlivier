@@ -20,6 +20,8 @@ namespace GameDev_Olivier_DuFour_2EACL1
        private FramesPlayer frames;
        private IInputReader inputReader;
        private IGameCommand moveCommand;
+       public Rectangle CollisionRectangle { get; set; }
+       private Rectangle _collisionRectangle;
 
         public Vector2 Position { get ; set ; }
 
@@ -31,6 +33,8 @@ namespace GameDev_Olivier_DuFour_2EACL1
             Position = new Vector2(10, 365);
             this.inputReader = reader;
             moveCommand = new MoveCommand();
+
+            _collisionRectangle = new Rectangle((int)Position.X, (int)Position.Y, 130, 385);
         }
 
         public void Update(GameTime gameTime)
@@ -39,6 +43,8 @@ namespace GameDev_Olivier_DuFour_2EACL1
             Debug.WriteLine(direction);
             Move(direction);
             animatie.Update(gameTime);
+            _collisionRectangle.X = (int)Position.X;
+            CollisionRectangle = _collisionRectangle;
         }
 
         private void Move(Vector2 direction)
