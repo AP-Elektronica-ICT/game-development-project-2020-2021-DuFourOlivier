@@ -9,6 +9,7 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 using System.Diagnostics;
+using GameDev_Olivier_DuFour_2EACL1.Frames;
 
 namespace GameDev_Olivier_DuFour_2EACL1
 {
@@ -16,6 +17,7 @@ namespace GameDev_Olivier_DuFour_2EACL1
     {
        private Texture2D playerTexture;
        private AnimatiePlayer animatie;
+       private FramesPlayer frames;
        private IInputReader inputReader;
        private IGameCommand moveCommand;
 
@@ -23,8 +25,9 @@ namespace GameDev_Olivier_DuFour_2EACL1
 
         public Player(Texture2D text, IInputReader reader)
         {
+            frames = new FramesPlayer();
             playerTexture = text;
-            animatie = new AnimatiePlayer();
+            animatie = new AnimatiePlayer(frames);
             Position = new Vector2(10, 365);
             this.inputReader = reader;
             moveCommand = new MoveCommand();
