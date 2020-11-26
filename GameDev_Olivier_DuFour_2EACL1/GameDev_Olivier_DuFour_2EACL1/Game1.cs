@@ -47,8 +47,9 @@ namespace GameDev_Olivier_DuFour_2EACL1
 
         private void InitializeGameObjects()
         {
-            player = new Player(texture, new KeyBoardReader());
+            
             blok = new Blok(blokTexture, new Vector2(200, 400));
+            player = new Player(texture, new KeyBoardReader(),blok);
         }
 
         protected override void Update(GameTime gameTime)
@@ -61,10 +62,10 @@ namespace GameDev_Olivier_DuFour_2EACL1
             player.Update(gameTime);
             blok.Update();
 
-            if (collisionManager.CheckCollision(player.CollisionRectangle, blok.CollisionRectangle))
-            {
-                Debug.WriteLine("aaaaaa");
-            }
+            //if (collisionManager.CheckCollision(player.CollisionRectangle, blok.CollisionRectangle))
+            //{
+            //    Debug.WriteLine("Collision");
+            //}
             base.Update(gameTime);
         }
 

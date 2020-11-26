@@ -10,8 +10,8 @@ namespace GameDev_Olivier_DuFour_2EACL1.Input
     class KeyBoardReader : IInputReader
     {
         public static string status= "Idle";
-        public static string PreviousState = "Idle";
-        bool jumping; //Is the character jumping?
+        public static string PreviousState = "Right";
+        public static bool jumping; //Is the character jumping?
         float startY, jumpspeed = 0; //startY to tell us //where it lands, jumpspeed to see how fast it jumps
 
         public KeyBoardReader()
@@ -141,12 +141,45 @@ namespace GameDev_Olivier_DuFour_2EACL1.Input
                     }
                 }
             }
+            lookdirection(direction);
+           
 
             return direction;
         }
+
+
+        public void lookdirection(Vector2 dir)
+        {
+            if (dir.X > 0)
+            {
+                PreviousState = "right";
+            }
+            else if (dir.X < 0)
+            {
+                PreviousState = "left";
+            }
+
+        }
+        //private void StatePicker()
+        //{
+        //    if (status != CharState.jumping)
+        //    {
+        //        if (HorizontalMovement.X != 0)
+        //        {
+        //            status = CharState.run;
+        //        }
+        //        else
+        //        {
+        //            status = CharState.idle;
+        //        }
+        //    }
+        }
+
+
         //public Microsoft.Xna.Framework.Vector2 Jump(Player player, bool jump)
         //{
 
         //}
-    }
+    //}
+
 }

@@ -8,6 +8,6 @@ namespace GameDev_Olivier_DuFour_2EACL1.Commands
 {
     public interface IGameCommand
     {
-        void Execute(ITransform transform, Vector2 direcrtion);
+        void Execute(ITransform transform, Vector2 direcrtion, Player player);
     }
 }
