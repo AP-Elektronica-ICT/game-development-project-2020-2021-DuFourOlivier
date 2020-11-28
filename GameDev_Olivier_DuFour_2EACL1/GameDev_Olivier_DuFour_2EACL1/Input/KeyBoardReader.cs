@@ -84,9 +84,6 @@ namespace GameDev_Olivier_DuFour_2EACL1.Input
             }
             return direction;
         }
-
-
-
         private void lookdirection(statussen look)
         {
 

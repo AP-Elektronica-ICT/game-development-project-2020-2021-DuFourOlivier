@@ -22,57 +22,67 @@ namespace GameDev_Olivier_DuFour_2EACL1.Animation
             /* De idle naar left blijft wanner we terug naar links begeven*/
             if (KeyBoardReader.status==statussen.Left)
             {
-                CurrentFrame = Frames.framesWalkLeft[counter];
-
-                frameMovement += CurrentFrame.SourceRectangle.Width * gameTime.ElapsedGameTime.TotalSeconds;
-                if (frameMovement >= CurrentFrame.SourceRectangle.Width / 10)
-                {
-                    counter++;
-                    frameMovement = 0;
-                }
-
-
-                if (counter >= Frames.framesWalkLeft.Count)
-                {
-                    counter = 0;
-                }
+                WalkLeft(gameTime);
             }
             else if(KeyBoardReader.status ==statussen.Right)
             {
-            CurrentFrame = Frames.framesWalkRight[counter];
-
-            frameMovement += CurrentFrame.SourceRectangle.Width * gameTime.ElapsedGameTime.TotalSeconds;
-            if (frameMovement>= CurrentFrame.SourceRectangle.Width/10)
-            {
-                counter++;
-                frameMovement = 0;
-            }
-            
-
-            if (counter >= Frames.framesWalkRight.Count)
-            {
-                counter = 0;
-            }
+                WalkRight(gameTime);
             }
             else if (KeyBoardReader.status== statussen.Idle)
             {
                 if (KeyBoardReader.PreviousState==statussen.Left)
                 {
-                    CurrentFrame = Frames.framesIdleLeft[0];
+                    IdleLeft();
                 }
                 else
                 {
-                    CurrentFrame = Frames.framesIdleRight[0];
-                }
-                
-                
+                    IdleRight();
+                } 
             }
-            
-            
-                
-            
-            
+        }
+        public void WalkLeft(GameTime gameTime)
+        {
+            CurrentFrame = Frames.framesWalkLeft[counter];
 
+            frameMovement += CurrentFrame.SourceRectangle.Width * gameTime.ElapsedGameTime.TotalSeconds;
+            if (frameMovement >= CurrentFrame.SourceRectangle.Width / 10)
+            {
+                counter++;
+                frameMovement = 0;
+            }
+
+
+            if (counter >= Frames.framesWalkLeft.Count)
+            {
+                counter = 0;
+            }
+        }
+
+        public void WalkRight(GameTime gameTime)
+        {
+            CurrentFrame = Frames.framesWalkRight[counter];
+
+            frameMovement += CurrentFrame.SourceRectangle.Width * gameTime.ElapsedGameTime.TotalSeconds;
+            if (frameMovement >= CurrentFrame.SourceRectangle.Width / 10)
+            {
+                counter++;
+                frameMovement = 0;
+            }
+
+
+            if (counter >= Frames.framesWalkRight.Count)
+            {
+                counter = 0;
+            }
+        }
+
+        public void IdleLeft()
+        {
+            CurrentFrame = Frames.framesIdleLeft[0];
+        }
+        public void IdleRight()
+        {
+            CurrentFrame = Frames.framesIdleRight[0];
         }
     }
 }
