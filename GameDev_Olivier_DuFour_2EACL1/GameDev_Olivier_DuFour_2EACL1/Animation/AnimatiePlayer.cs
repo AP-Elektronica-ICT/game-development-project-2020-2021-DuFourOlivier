@@ -20,7 +20,7 @@ namespace GameDev_Olivier_DuFour_2EACL1.Animation
         public override void Update(GameTime gameTime)
         {
             /* De idle naar left blijft wanner we terug naar links begeven*/
-            if (KeyBoardReader.status=="Left")
+            if (KeyBoardReader.status==statussen.Left)
             {
                 CurrentFrame = Frames.framesWalkLeft[counter];
 
@@ -37,7 +37,7 @@ namespace GameDev_Olivier_DuFour_2EACL1.Animation
                     counter = 0;
                 }
             }
-             if(KeyBoardReader.status == "Right")
+            else if(KeyBoardReader.status ==statussen.Right)
             {
             CurrentFrame = Frames.framesWalkRight[counter];
 
@@ -54,9 +54,9 @@ namespace GameDev_Olivier_DuFour_2EACL1.Animation
                 counter = 0;
             }
             }
-            if (KeyBoardReader.status=="Idle")
+            else if (KeyBoardReader.status== statussen.Idle)
             {
-                if (KeyBoardReader.PreviousState=="Left")
+                if (KeyBoardReader.PreviousState==statussen.Left)
                 {
                     CurrentFrame = Frames.framesIdleLeft[0];
                 }
