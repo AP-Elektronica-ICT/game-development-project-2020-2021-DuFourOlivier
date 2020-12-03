@@ -32,9 +32,25 @@ namespace GameDev_Olivier_DuFour_2EACL1.Commands
             }
             if (!(collisionManager.CheckCollision(futureY, blok.CollisionRectangle)))
             {
+                KeyBoardReader.startY = 335;
+                if (KeyBoardReader.jumping==false && player.Position.Y<=KeyBoardReader.startY)
+                //If it's farther than ground
+                {
+                    Debug.WriteLine("vallen");
+                    KeyBoardReader.jumping = true;
+                    KeyBoardReader.jumpspeed = 1;
+                    
+                }
+
+
                 transform.Position += new Vector2(0, direction.Y);
             }
-            
+            if ((collisionManager.CheckCollision(futureY, blok.CollisionRectangle)))
+            {
+                KeyBoardReader.jumping = false;
+                KeyBoardReader.startY = blok.CollisionRectangle.Y-140;
+            }
+
             Debug.WriteLine(direction);
         }
     }

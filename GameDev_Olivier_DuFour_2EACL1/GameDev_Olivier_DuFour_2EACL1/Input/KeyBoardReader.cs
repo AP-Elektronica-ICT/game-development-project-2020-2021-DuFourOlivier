@@ -8,20 +8,22 @@ using System.Text;
 namespace GameDev_Olivier_DuFour_2EACL1.Input
 {
     public enum statussen {Left,Idle,Right,Jumping,NotJumping }
+    public enum CollisionPlayer {YES,NO}
     class KeyBoardReader : IInputReader
     {
         public static statussen PreviousState = statussen.Right;
         public static statussen status = statussen.Idle;
+        public static CollisionPlayer ColPlayer = CollisionPlayer.NO;
         KeyboardState state;
         public static bool jumping; //Is the character jumping?
-        float startY, jumpspeed = 0; //startY to tell us //where it lands, jumpspeed to see how fast it jumps
+        public static float startY, jumpspeed = 0; //startY to tell us //where it lands, jumpspeed to see how fast it jumps
 
         public KeyBoardReader()
         {
             
             jumping = false;//Init jumping to false
             jumpspeed = 0;//Default no speed
-            startY = 335;
+            startY = 365;
         }
         public Microsoft.Xna.Framework.Vector2 ReadInput(Player player)
         {
@@ -54,7 +56,7 @@ namespace GameDev_Olivier_DuFour_2EACL1.Input
         private Microsoft.Xna.Framework.Vector2 MoveVertical(KeyboardState key, Player player)
         {
             var direction = Vector2.Zero;
-            if (jumping)
+            if (jumping==true)
             {
                 
                 direction.Y += jumpspeed;
@@ -70,6 +72,7 @@ namespace GameDev_Olivier_DuFour_2EACL1.Input
             }
             else if (!jumping)
             {
+                
                 if (state.IsKeyDown(Keys.Space))
                 {
                     jumping = true;
