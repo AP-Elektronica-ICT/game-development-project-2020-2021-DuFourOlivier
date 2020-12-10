@@ -35,9 +35,9 @@ namespace GameDev_Olivier_DuFour_2EACL1
             animatie = new AnimatiePlayer(frames);
             Position = new Vector2(10, 365);
             this.inputReader = reader;
-            moveCommand = new MoveCommand(blokje);
+            moveCommand = new MoveCommand();
 
-            _collisionRectangle = new Rectangle((int)Position.X, (int)Position.Y, 104, 140);
+            _collisionRectangle = new Rectangle((int)Position.X, (int)Position.Y, 80, 120);
         }
 
         public void Update(GameTime gameTime)
@@ -60,7 +60,8 @@ namespace GameDev_Olivier_DuFour_2EACL1
         public void Draw(SpriteBatch _spriteBatch)
         {
             _spriteBatch.Draw(playerTexture, Position,animatie.CurrentFrame.SourceRectangle , Color.White);
-            _spriteBatch.Draw(playerTexture, CollisionRectangle, Color.White);
+            
+            
         }
 
        

@@ -14,10 +14,10 @@ namespace GameDev_Olivier_DuFour_2EACL1.Commands
     {
         public Vector2 speed;
         CollisionManager collisionManager = new CollisionManager();
-        Blok blok;
-        public MoveCommand(Blok blok)
+ 
+        public MoveCommand()
         {
-            this.blok = blok;
+            
             this.speed = new Vector2(4, 2);
         }
         public void Execute(ITransform transform, Vector2 direction, Player player)
@@ -25,12 +25,12 @@ namespace GameDev_Olivier_DuFour_2EACL1.Commands
             direction *= speed;
             Rectangle futureX = new Rectangle((int)(player.Position.X + direction.X),(int)(player.Position.Y), player.CollisionRectangle.Width, player.CollisionRectangle.Height);
             Rectangle futureY = new Rectangle((int)(player.Position.X), (int)(player.Position.Y + direction.Y), player.CollisionRectangle.Width, player.CollisionRectangle.Height);
-            if (!(collisionManager.CheckCollision(futureX, blok.CollisionRectangle)))
+            if (!collisionManager.CheckFuturMovements(futureX))
             {
                 
                 transform.Position += new Vector2(direction.X,0);
             }
-            if (!(collisionManager.CheckCollision(futureY, blok.CollisionRectangle)))
+            if (!(collisionManager.CheckFuturMovements(futureY)))
             {
                 KeyBoardReader.startY = 335;
                 if (KeyBoardReader.jumping==false && player.Position.Y<=KeyBoardReader.startY)
@@ -45,10 +45,10 @@ namespace GameDev_Olivier_DuFour_2EACL1.Commands
 
                 transform.Position += new Vector2(0, direction.Y);
             }
-            if ((collisionManager.CheckCollision(futureY, blok.CollisionRectangle)))
+            if ((collisionManager.CheckFuturMovements(futureY)))
             {
                 KeyBoardReader.jumping = false;
-                KeyBoardReader.startY = blok.CollisionRectangle.Y-140;
+               
             }
 
             Debug.WriteLine(direction);

@@ -76,7 +76,7 @@ namespace GameDev_Olivier_DuFour_2EACL1.Input
                 if (state.IsKeyDown(Keys.Space))
                 {
                     jumping = true;
-                    jumpspeed = -14;//Give it upward thrust
+                    jumpspeed = -8;//Give it upward thrust
                     player.Position = new Vector2(player.Position.X, startY);
                 }
                 else

@@ -47,8 +47,12 @@ namespace GameDev_Olivier_DuFour_2EACL1
 
         private void InitializeGameObjects()
         {
+            CollisionManager.Wereld.Add(new Blok(blokTexture, new Vector2(150, 400)));
+            CollisionManager.Wereld.Add(new Blok(blokTexture, new Vector2(250, 350)));
+            CollisionManager.Wereld.Add(new Blok(blokTexture, new Vector2(350, 300)));
+            CollisionManager.Wereld.Add(new Blok(blokTexture, new Vector2(450, 350)));
+            CollisionManager.Wereld.Add(new Blok(blokTexture, new Vector2(550, 400)));
             
-            blok = new Blok(blokTexture, new Vector2(200, 400));
             player = new Player(texture, new KeyBoardReader(),blok);
         }
 
@@ -60,7 +64,7 @@ namespace GameDev_Olivier_DuFour_2EACL1
 
             // TODO: Add your update logic here
             player.Update(gameTime);
-            blok.Update();
+
 
             //if (collisionManager.CheckCollision(player.CollisionRectangle, blok.CollisionRectangle))
             //{
@@ -76,7 +80,10 @@ namespace GameDev_Olivier_DuFour_2EACL1
             // TODO: Add your drawing code here
             _spriteBatch.Begin();
             player.Draw(_spriteBatch);
-            blok.Draw(_spriteBatch);
+            foreach (var blok in CollisionManager.Wereld)
+            {
+                blok.Draw(_spriteBatch);
+            }
             
             _spriteBatch.End();
 
