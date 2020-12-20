@@ -53,7 +53,7 @@ namespace GameDev_Olivier_DuFour_2EACL1
             InitializeGameObjects();
 
             // TODO: use this.Content to load your game content here
-            map = new TmxMap("Content/exampleMap.tmx");
+            map = new TmxMap("Content/try.tmx");
             tileset = Content.Load<Texture2D>(map.Tilesets[0].Name.ToString());
 
             tileWidth = map.Tilesets[0].TileWidth;
@@ -98,27 +98,31 @@ namespace GameDev_Olivier_DuFour_2EACL1
             // TODO: Add your drawing code here
             _spriteBatch.Begin();
             // Draw Map
-            for (var i = 0; i < map.Layers[0].Tiles.Count; i++)
+            for (var j = 0; j < map.Layers.Count; j++)
             {
-                int gid = map.Layers[0].Tiles[i].Gid;
 
-                // Empty tile, do nothing
-                if (gid == 0)
+                for (var i = 0; i < map.Layers[0].Tiles.Count; i++)
                 {
+                    int gid = map.Layers[0].Tiles[i].Gid;
 
-                }
-                else
-                {
-                    int tileFrame = gid - 1;
-                    int column = tileFrame % tilesetTilesWide;
-                    int row = (int)Math.Floor((double)tileFrame / (double)tilesetTilesWide);
+                    // Empty tile, do nothing
+                    if (gid == 0)
+                    {
 
-                    float x = (i % map.Width) * map.TileWidth;
-                    float y = (float)Math.Floor(i / (double)map.Width) * map.TileHeight;
+                    }
+                    else
+                    {
+                        int tileFrame = gid - 1;
+                        int column = tileFrame % tilesetTilesWide;
+                        int row = (int)Math.Floor((double)tileFrame / (double)tilesetTilesWide);
 
-                    Rectangle tilesetRec = new Rectangle(tileWidth * column, tileHeight * row, tileWidth, tileHeight);
+                        float x = (i % map.Width) * map.TileWidth;
+                        float y = (float)Math.Floor(i / (double)map.Width) * map.TileHeight;
 
-                    _spriteBatch.Draw(tileset, new Rectangle((int)x, (int)y, tileWidth, tileHeight), tilesetRec, Color.White);
+                        Rectangle tilesetRec = new Rectangle(tileWidth * column, tileHeight * row, tileWidth, tileHeight);
+
+                        _spriteBatch.Draw(tileset, new Rectangle((int)x, (int)y, tileWidth, tileHeight), tilesetRec, Color.White);
+                    }
                 }
             }
             // draw player

@@ -6,9 +6,395 @@
   <SourceFiles>
     <File>D:/Users/student/Desktop/GameDev/game-development-project-2020-2021-DuFourOlivier/GameDev_Olivier_DuFour_2EACL1/GameDev_Olivier_DuFour_2EACL1/Content/blok.png</File>
     <File>D:/Users/student/Desktop/GameDev/game-development-project-2020-2021-DuFourOlivier/GameDev_Olivier_DuFour_2EACL1/GameDev_Olivier_DuFour_2EACL1/Content/character.png</File>
+    <File>D:/Users/student/Desktop/GameDev/game-development-project-2020-2021-DuFourOlivier/GameDev_Olivier_DuFour_2EACL1/GameDev_Olivier_DuFour_2EACL1/Content/enemies sprites/bomber goblin/bomber_goblin_attack_anim.gif</File>
+    <File>D:/Users/student/Desktop/GameDev/game-development-project-2020-2021-DuFourOlivier/GameDev_Olivier_DuFour_2EACL1/GameDev_Olivier_DuFour_2EACL1/Content/enemies sprites/bomber goblin/bomber_goblin_attack_anim_strip_6.png</File>
+    <File>D:/Users/student/Desktop/GameDev/game-development-project-2020-2021-DuFourOlivier/GameDev_Olivier_DuFour_2EACL1/GameDev_Olivier_DuFour_2EACL1/Content/enemies sprites/bomber goblin/bomber_goblin_death_anim.gif</File>
+    <File>D:/Users/student/Desktop/GameDev/game-development-project-2020-2021-DuFourOlivier/GameDev_Olivier_DuFour_2EACL1/GameDev_Olivier_DuFour_2EACL1/Content/enemies sprites/bomber goblin/bomber_goblin_death_anim_strip_6.png</File>
+    <File>D:/Users/student/Desktop/GameDev/game-development-project-2020-2021-DuFourOlivier/GameDev_Olivier_DuFour_2EACL1/GameDev_Olivier_DuFour_2EACL1/Content/enemies sprites/bomber goblin/bomber_goblin_hit_anim.gif</File>
+    <File>D:/Users/student/Desktop/GameDev/game-development-project-2020-2021-DuFourOlivier/GameDev_Olivier_DuFour_2EACL1/GameDev_Olivier_DuFour_2EACL1/Content/enemies sprites/bomber goblin/bomber_goblin_hit_anim_strip_3.png</File>
+    <File>D:/Users/student/Desktop/GameDev/game-development-project-2020-2021-DuFourOlivier/GameDev_Olivier_DuFour_2EACL1/GameDev_Olivier_DuFour_2EACL1/Content/enemies sprites/bomber goblin/bomber_goblin_idle_anim.gif</File>
+    <File>D:/Users/student/Desktop/GameDev/game-development-project-2020-2021-DuFourOlivier/GameDev_Olivier_DuFour_2EACL1/GameDev_Olivier_DuFour_2EACL1/Content/enemies sprites/bomber goblin/bomber_goblin_idle_anim_strip_4.png</File>
+    <File>D:/Users/student/Desktop/GameDev/game-development-project-2020-2021-DuFourOlivier/GameDev_Olivier_DuFour_2EACL1/GameDev_Olivier_DuFour_2EACL1/Content/enemies sprites/bomber goblin/goblin_bomber_spritesheet.png</File>
+    <File>D:/Users/student/Desktop/GameDev/game-development-project-2020-2021-DuFourOlivier/GameDev_Olivier_DuFour_2EACL1/GameDev_Olivier_DuFour_2EACL1/Content/enemies sprites/fly/blue_fly_attack_anim.gif</File>
+    <File>D:/Users/student/Desktop/GameDev/game-development-project-2020-2021-DuFourOlivier/GameDev_Olivier_DuFour_2EACL1/GameDev_Olivier_DuFour_2EACL1/Content/enemies sprites/fly/blue_fly_attack_anim_srip_3.png</File>
+    <File>D:/Users/student/Desktop/GameDev/game-development-project-2020-2021-DuFourOlivier/GameDev_Olivier_DuFour_2EACL1/GameDev_Olivier_DuFour_2EACL1/Content/enemies sprites/fly/blue_fly_death_anim.gif</File>
+    <File>D:/Users/student/Desktop/GameDev/game-development-project-2020-2021-DuFourOlivier/GameDev_Olivier_DuFour_2EACL1/GameDev_Olivier_DuFour_2EACL1/Content/enemies sprites/fly/blue_fly_death_anim_strip_5.png</File>
+    <File>D:/Users/student/Desktop/GameDev/game-development-project-2020-2021-DuFourOlivier/GameDev_Olivier_DuFour_2EACL1/GameDev_Olivier_DuFour_2EACL1/Content/enemies sprites/fly/blue_fly_hit_anim.gif</File>
+    <File>D:/Users/student/Desktop/GameDev/game-development-project-2020-2021-DuFourOlivier/GameDev_Olivier_DuFour_2EACL1/GameDev_Olivier_DuFour_2EACL1/Content/enemies sprites/fly/blue_fly_hit_anim_strip_3.png</File>
+    <File>D:/Users/student/Desktop/GameDev/game-development-project-2020-2021-DuFourOlivier/GameDev_Olivier_DuFour_2EACL1/GameDev_Olivier_DuFour_2EACL1/Content/enemies sprites/fly/blue_fly_idle_or_flying_anim.gif</File>
+    <File>D:/Users/student/Desktop/GameDev/game-development-project-2020-2021-DuFourOlivier/GameDev_Olivier_DuFour_2EACL1/GameDev_Olivier_DuFour_2EACL1/Content/enemies sprites/fly/blue_fly_idle_or_flying_anim_strip_3.png</File>
+    <File>D:/Users/student/Desktop/GameDev/game-development-project-2020-2021-DuFourOlivier/GameDev_Olivier_DuFour_2EACL1/GameDev_Olivier_DuFour_2EACL1/Content/enemies sprites/fly/fly_spritesheet.png</File>
+    <File>D:/Users/student/Desktop/GameDev/game-development-project-2020-2021-DuFourOlivier/GameDev_Olivier_DuFour_2EACL1/GameDev_Olivier_DuFour_2EACL1/Content/enemies sprites/fly/orange_fly_atack_anim.gif</File>
+    <File>D:/Users/student/Desktop/GameDev/game-development-project-2020-2021-DuFourOlivier/GameDev_Olivier_DuFour_2EACL1/GameDev_Olivier_DuFour_2EACL1/Content/enemies sprites/fly/orange_fly_atack_anim_srip_3.png</File>
+    <File>D:/Users/student/Desktop/GameDev/game-development-project-2020-2021-DuFourOlivier/GameDev_Olivier_DuFour_2EACL1/GameDev_Olivier_DuFour_2EACL1/Content/enemies sprites/fly/orange_fly_death_anim.gif</File>
+    <File>D:/Users/student/Desktop/GameDev/game-development-project-2020-2021-DuFourOlivier/GameDev_Olivier_DuFour_2EACL1/GameDev_Olivier_DuFour_2EACL1/Content/enemies sprites/fly/orange_fly_death_anim_strip_5.png</File>
+    <File>D:/Users/student/Desktop/GameDev/game-development-project-2020-2021-DuFourOlivier/GameDev_Olivier_DuFour_2EACL1/GameDev_Olivier_DuFour_2EACL1/Content/enemies sprites/fly/orange_fly_hit_anim.gif</File>
+    <File>D:/Users/student/Desktop/GameDev/game-development-project-2020-2021-DuFourOlivier/GameDev_Olivier_DuFour_2EACL1/GameDev_Olivier_DuFour_2EACL1/Content/enemies sprites/fly/orange_fly_hit_anim_strip_3.png</File>
+    <File>D:/Users/student/Desktop/GameDev/game-development-project-2020-2021-DuFourOlivier/GameDev_Olivier_DuFour_2EACL1/GameDev_Olivier_DuFour_2EACL1/Content/enemies sprites/fly/orange_fly_idle_or_flying_anim.gif</File>
+    <File>D:/Users/student/Desktop/GameDev/game-development-project-2020-2021-DuFourOlivier/GameDev_Olivier_DuFour_2EACL1/GameDev_Olivier_DuFour_2EACL1/Content/enemies sprites/fly/orange_fly_idle_or_flying_anim_strip_3.png</File>
+    <File>D:/Users/student/Desktop/GameDev/game-development-project-2020-2021-DuFourOlivier/GameDev_Olivier_DuFour_2EACL1/GameDev_Olivier_DuFour_2EACL1/Content/enemies sprites/goblin/goblin_attack_anim.gif</File>
+    <File>D:/Users/student/Desktop/GameDev/game-development-project-2020-2021-DuFourOlivier/GameDev_Olivier_DuFour_2EACL1/GameDev_Olivier_DuFour_2EACL1/Content/enemies sprites/goblin/goblin_attack_anim_strip_4.png</File>
+    <File>D:/Users/student/Desktop/GameDev/game-development-project-2020-2021-DuFourOlivier/GameDev_Olivier_DuFour_2EACL1/GameDev_Olivier_DuFour_2EACL1/Content/enemies sprites/goblin/goblin_death_anim.gif</File>
+    <File>D:/Users/student/Desktop/GameDev/game-development-project-2020-2021-DuFourOlivier/GameDev_Olivier_DuFour_2EACL1/GameDev_Olivier_DuFour_2EACL1/Content/enemies sprites/goblin/goblin_death_anim_strip_6.png</File>
+    <File>D:/Users/student/Desktop/GameDev/game-development-project-2020-2021-DuFourOlivier/GameDev_Olivier_DuFour_2EACL1/GameDev_Olivier_DuFour_2EACL1/Content/enemies sprites/goblin/goblin_hit_anim.gif</File>
+    <File>D:/Users/student/Desktop/GameDev/game-development-project-2020-2021-DuFourOlivier/GameDev_Olivier_DuFour_2EACL1/GameDev_Olivier_DuFour_2EACL1/Content/enemies sprites/goblin/goblin_hit_anim_strip_3.png</File>
+    <File>D:/Users/student/Desktop/GameDev/game-development-project-2020-2021-DuFourOlivier/GameDev_Olivier_DuFour_2EACL1/GameDev_Olivier_DuFour_2EACL1/Content/enemies sprites/goblin/goblin_idle_anim.gif</File>
+    <File>D:/Users/student/Desktop/GameDev/game-development-project-2020-2021-DuFourOlivier/GameDev_Olivier_DuFour_2EACL1/GameDev_Olivier_DuFour_2EACL1/Content/enemies sprites/goblin/goblin_idle_anim_strip_4.png</File>
+    <File>D:/Users/student/Desktop/GameDev/game-development-project-2020-2021-DuFourOlivier/GameDev_Olivier_DuFour_2EACL1/GameDev_Olivier_DuFour_2EACL1/Content/enemies sprites/goblin/goblin_run_anim.gif</File>
+    <File>D:/Users/student/Desktop/GameDev/game-development-project-2020-2021-DuFourOlivier/GameDev_Olivier_DuFour_2EACL1/GameDev_Olivier_DuFour_2EACL1/Content/enemies sprites/goblin/goblin_run_anim_strip_6.png</File>
+    <File>D:/Users/student/Desktop/GameDev/game-development-project-2020-2021-DuFourOlivier/GameDev_Olivier_DuFour_2EACL1/GameDev_Olivier_DuFour_2EACL1/Content/enemies sprites/goblin/goblin_spritesheet.png</File>
+    <File>D:/Users/student/Desktop/GameDev/game-development-project-2020-2021-DuFourOlivier/GameDev_Olivier_DuFour_2EACL1/GameDev_Olivier_DuFour_2EACL1/Content/enemies sprites/mushroom/mushroom_crushed_anim.gif</File>
+    <File>D:/Users/student/Desktop/GameDev/game-development-project-2020-2021-DuFourOlivier/GameDev_Olivier_DuFour_2EACL1/GameDev_Olivier_DuFour_2EACL1/Content/enemies sprites/mushroom/mushroom_crushed_anim_strip_6.png</File>
+    <File>D:/Users/student/Desktop/GameDev/game-development-project-2020-2021-DuFourOlivier/GameDev_Olivier_DuFour_2EACL1/GameDev_Olivier_DuFour_2EACL1/Content/enemies sprites/mushroom/mushroom_death_anim.gif</File>
+    <File>D:/Users/student/Desktop/GameDev/game-development-project-2020-2021-DuFourOlivier/GameDev_Olivier_DuFour_2EACL1/GameDev_Olivier_DuFour_2EACL1/Content/enemies sprites/mushroom/mushroom_death_anim_strip_6.png</File>
+    <File>D:/Users/student/Desktop/GameDev/game-development-project-2020-2021-DuFourOlivier/GameDev_Olivier_DuFour_2EACL1/GameDev_Olivier_DuFour_2EACL1/Content/enemies sprites/mushroom/mushroom_hit_anim.gif</File>
+    <File>D:/Users/student/Desktop/GameDev/game-development-project-2020-2021-DuFourOlivier/GameDev_Olivier_DuFour_2EACL1/GameDev_Olivier_DuFour_2EACL1/Content/enemies sprites/mushroom/mushroom_hit_anim_strip_3.png</File>
+    <File>D:/Users/student/Desktop/GameDev/game-development-project-2020-2021-DuFourOlivier/GameDev_Olivier_DuFour_2EACL1/GameDev_Olivier_DuFour_2EACL1/Content/enemies sprites/mushroom/mushroom_spritesheet.png</File>
+    <File>D:/Users/student/Desktop/GameDev/game-development-project-2020-2021-DuFourOlivier/GameDev_Olivier_DuFour_2EACL1/GameDev_Olivier_DuFour_2EACL1/Content/enemies sprites/mushroom/mushroom_walk_anim.gif</File>
+    <File>D:/Users/student/Desktop/GameDev/game-development-project-2020-2021-DuFourOlivier/GameDev_Olivier_DuFour_2EACL1/GameDev_Olivier_DuFour_2EACL1/Content/enemies sprites/mushroom/mushroom_walk_anim_strip_8.png</File>
+    <File>D:/Users/student/Desktop/GameDev/game-development-project-2020-2021-DuFourOlivier/GameDev_Olivier_DuFour_2EACL1/GameDev_Olivier_DuFour_2EACL1/Content/enemies sprites/slime/slime_death_anim.gif</File>
+    <File>D:/Users/student/Desktop/GameDev/game-development-project-2020-2021-DuFourOlivier/GameDev_Olivier_DuFour_2EACL1/GameDev_Olivier_DuFour_2EACL1/Content/enemies sprites/slime/slime_death_anim_strip_6.png</File>
+    <File>D:/Users/student/Desktop/GameDev/game-development-project-2020-2021-DuFourOlivier/GameDev_Olivier_DuFour_2EACL1/GameDev_Olivier_DuFour_2EACL1/Content/enemies sprites/slime/slime_hit_anim.gif</File>
+    <File>D:/Users/student/Desktop/GameDev/game-development-project-2020-2021-DuFourOlivier/GameDev_Olivier_DuFour_2EACL1/GameDev_Olivier_DuFour_2EACL1/Content/enemies sprites/slime/slime_hit_anim_strip_3.png</File>
+    <File>D:/Users/student/Desktop/GameDev/game-development-project-2020-2021-DuFourOlivier/GameDev_Olivier_DuFour_2EACL1/GameDev_Olivier_DuFour_2EACL1/Content/enemies sprites/slime/slime_idle_anim.gif</File>
+    <File>D:/Users/student/Desktop/GameDev/game-development-project-2020-2021-DuFourOlivier/GameDev_Olivier_DuFour_2EACL1/GameDev_Olivier_DuFour_2EACL1/Content/enemies sprites/slime/slime_idle_anim_strip_5.png</File>
+    <File>D:/Users/student/Desktop/GameDev/game-development-project-2020-2021-DuFourOlivier/GameDev_Olivier_DuFour_2EACL1/GameDev_Olivier_DuFour_2EACL1/Content/enemies sprites/slime/slime_spritesheet.png</File>
+    <File>D:/Users/student/Desktop/GameDev/game-development-project-2020-2021-DuFourOlivier/GameDev_Olivier_DuFour_2EACL1/GameDev_Olivier_DuFour_2EACL1/Content/enemies sprites/slime/slime_walk_anim.gif</File>
+    <File>D:/Users/student/Desktop/GameDev/game-development-project-2020-2021-DuFourOlivier/GameDev_Olivier_DuFour_2EACL1/GameDev_Olivier_DuFour_2EACL1/Content/enemies sprites/slime/slime_walk_anim_strip_18.png</File>
+    <File>D:/Users/student/Desktop/GameDev/game-development-project-2020-2021-DuFourOlivier/GameDev_Olivier_DuFour_2EACL1/GameDev_Olivier_DuFour_2EACL1/Content/enemies sprites/worm/worm_death_anim.gif</File>
+    <File>D:/Users/student/Desktop/GameDev/game-development-project-2020-2021-DuFourOlivier/GameDev_Olivier_DuFour_2EACL1/GameDev_Olivier_DuFour_2EACL1/Content/enemies sprites/worm/worm_death_anim_strip_6.png</File>
+    <File>D:/Users/student/Desktop/GameDev/game-development-project-2020-2021-DuFourOlivier/GameDev_Olivier_DuFour_2EACL1/GameDev_Olivier_DuFour_2EACL1/Content/enemies sprites/worm/worm_hit_anim.gif</File>
+    <File>D:/Users/student/Desktop/GameDev/game-development-project-2020-2021-DuFourOlivier/GameDev_Olivier_DuFour_2EACL1/GameDev_Olivier_DuFour_2EACL1/Content/enemies sprites/worm/worm_hit_anim_strip_3.png</File>
+    <File>D:/Users/student/Desktop/GameDev/game-development-project-2020-2021-DuFourOlivier/GameDev_Olivier_DuFour_2EACL1/GameDev_Olivier_DuFour_2EACL1/Content/enemies sprites/worm/worm_spritesheet.png</File>
+    <File>D:/Users/student/Desktop/GameDev/game-development-project-2020-2021-DuFourOlivier/GameDev_Olivier_DuFour_2EACL1/GameDev_Olivier_DuFour_2EACL1/Content/enemies sprites/worm/worm_walk_anim.gif</File>
+    <File>D:/Users/student/Desktop/GameDev/game-development-project-2020-2021-DuFourOlivier/GameDev_Olivier_DuFour_2EACL1/GameDev_Olivier_DuFour_2EACL1/Content/enemies sprites/worm/worm_walk_anim_strip_6.png</File>
     <File>D:/Users/student/Desktop/GameDev/game-development-project-2020-2021-DuFourOlivier/GameDev_Olivier_DuFour_2EACL1/GameDev_Olivier_DuFour_2EACL1/Content/exampleTileset.png</File>
+    <File>D:/Users/student/Desktop/GameDev/game-development-project-2020-2021-DuFourOlivier/GameDev_Olivier_DuFour_2EACL1/GameDev_Olivier_DuFour_2EACL1/Content/fauna sprites/bird_flying_anim.gif</File>
+    <File>D:/Users/student/Desktop/GameDev/game-development-project-2020-2021-DuFourOlivier/GameDev_Olivier_DuFour_2EACL1/GameDev_Olivier_DuFour_2EACL1/Content/fauna sprites/bird_flying_anim_strip_3.png</File>
+    <File>D:/Users/student/Desktop/GameDev/game-development-project-2020-2021-DuFourOlivier/GameDev_Olivier_DuFour_2EACL1/GameDev_Olivier_DuFour_2EACL1/Content/fauna sprites/bird_idle_anim.gif</File>
+    <File>D:/Users/student/Desktop/GameDev/game-development-project-2020-2021-DuFourOlivier/GameDev_Olivier_DuFour_2EACL1/GameDev_Olivier_DuFour_2EACL1/Content/fauna sprites/bird_idle_anim_strip_8.png</File>
+    <File>D:/Users/student/Desktop/GameDev/game-development-project-2020-2021-DuFourOlivier/GameDev_Olivier_DuFour_2EACL1/GameDev_Olivier_DuFour_2EACL1/Content/fauna sprites/bird_walk_anim.gif</File>
+    <File>D:/Users/student/Desktop/GameDev/game-development-project-2020-2021-DuFourOlivier/GameDev_Olivier_DuFour_2EACL1/GameDev_Olivier_DuFour_2EACL1/Content/fauna sprites/bird_walk_anim_strip_3.png</File>
+    <File>D:/Users/student/Desktop/GameDev/game-development-project-2020-2021-DuFourOlivier/GameDev_Olivier_DuFour_2EACL1/GameDev_Olivier_DuFour_2EACL1/Content/fauna sprites/fauna_spritesheet.png</File>
+    <File>D:/Users/student/Desktop/GameDev/game-development-project-2020-2021-DuFourOlivier/GameDev_Olivier_DuFour_2EACL1/GameDev_Olivier_DuFour_2EACL1/Content/fauna sprites/rabit_idle_anim.gif</File>
+    <File>D:/Users/student/Desktop/GameDev/game-development-project-2020-2021-DuFourOlivier/GameDev_Olivier_DuFour_2EACL1/GameDev_Olivier_DuFour_2EACL1/Content/fauna sprites/rabit_idle_anim_strip_4.png</File>
+    <File>D:/Users/student/Desktop/GameDev/game-development-project-2020-2021-DuFourOlivier/GameDev_Olivier_DuFour_2EACL1/GameDev_Olivier_DuFour_2EACL1/Content/fauna sprites/rabit_walk_anim.gif</File>
+    <File>D:/Users/student/Desktop/GameDev/game-development-project-2020-2021-DuFourOlivier/GameDev_Olivier_DuFour_2EACL1/GameDev_Olivier_DuFour_2EACL1/Content/fauna sprites/rabit_walk_anim_strip_6.png</File>
+    <File>D:/Users/student/Desktop/GameDev/game-development-project-2020-2021-DuFourOlivier/GameDev_Olivier_DuFour_2EACL1/GameDev_Olivier_DuFour_2EACL1/Content/herochar sprites(new)/herochar_after_jump_dust_anim.gif</File>
+    <File>D:/Users/student/Desktop/GameDev/game-development-project-2020-2021-DuFourOlivier/GameDev_Olivier_DuFour_2EACL1/GameDev_Olivier_DuFour_2EACL1/Content/herochar sprites(new)/herochar_after_jump_dust_anim_strip_4.png</File>
+    <File>D:/Users/student/Desktop/GameDev/game-development-project-2020-2021-DuFourOlivier/GameDev_Olivier_DuFour_2EACL1/GameDev_Olivier_DuFour_2EACL1/Content/herochar sprites(new)/herochar_attack_anim(new).gif</File>
+    <File>D:/Users/student/Desktop/GameDev/game-development-project-2020-2021-DuFourOlivier/GameDev_Olivier_DuFour_2EACL1/GameDev_Olivier_DuFour_2EACL1/Content/herochar sprites(new)/herochar_attack_anim_strip_4(new).png</File>
+    <File>D:/Users/student/Desktop/GameDev/game-development-project-2020-2021-DuFourOlivier/GameDev_Olivier_DuFour_2EACL1/GameDev_Olivier_DuFour_2EACL1/Content/herochar sprites(new)/herochar_before_jump_dust_anim.gif</File>
+    <File>D:/Users/student/Desktop/GameDev/game-development-project-2020-2021-DuFourOlivier/GameDev_Olivier_DuFour_2EACL1/GameDev_Olivier_DuFour_2EACL1/Content/herochar sprites(new)/herochar_before_jump_dust_anim_strip_4.png</File>
+    <File>D:/Users/student/Desktop/GameDev/game-development-project-2020-2021-DuFourOlivier/GameDev_Olivier_DuFour_2EACL1/GameDev_Olivier_DuFour_2EACL1/Content/herochar sprites(new)/herochar_before_or_after_jump.gif</File>
+    <File>D:/Users/student/Desktop/GameDev/game-development-project-2020-2021-DuFourOlivier/GameDev_Olivier_DuFour_2EACL1/GameDev_Olivier_DuFour_2EACL1/Content/herochar sprites(new)/herochar_before_or_after_jump_srip_2.png</File>
+    <File>D:/Users/student/Desktop/GameDev/game-development-project-2020-2021-DuFourOlivier/GameDev_Olivier_DuFour_2EACL1/GameDev_Olivier_DuFour_2EACL1/Content/herochar sprites(new)/herochar_death_anim.gif</File>
+    <File>D:/Users/student/Desktop/GameDev/game-development-project-2020-2021-DuFourOlivier/GameDev_Olivier_DuFour_2EACL1/GameDev_Olivier_DuFour_2EACL1/Content/herochar sprites(new)/herochar_death_anim_strip_8.png</File>
+    <File>D:/Users/student/Desktop/GameDev/game-development-project-2020-2021-DuFourOlivier/GameDev_Olivier_DuFour_2EACL1/GameDev_Olivier_DuFour_2EACL1/Content/herochar sprites(new)/herochar_hit_anim.gif</File>
+    <File>D:/Users/student/Desktop/GameDev/game-development-project-2020-2021-DuFourOlivier/GameDev_Olivier_DuFour_2EACL1/GameDev_Olivier_DuFour_2EACL1/Content/herochar sprites(new)/herochar_hit_anim_strip_3.png</File>
+    <File>D:/Users/student/Desktop/GameDev/game-development-project-2020-2021-DuFourOlivier/GameDev_Olivier_DuFour_2EACL1/GameDev_Olivier_DuFour_2EACL1/Content/herochar sprites(new)/herochar_idle_anim.gif</File>
+    <File>D:/Users/student/Desktop/GameDev/game-development-project-2020-2021-DuFourOlivier/GameDev_Olivier_DuFour_2EACL1/GameDev_Olivier_DuFour_2EACL1/Content/herochar sprites(new)/herochar_idle_anim_strip_4.png</File>
+    <File>D:/Users/student/Desktop/GameDev/game-development-project-2020-2021-DuFourOlivier/GameDev_Olivier_DuFour_2EACL1/GameDev_Olivier_DuFour_2EACL1/Content/herochar sprites(new)/herochar_jump_double_anim.gif</File>
+    <File>D:/Users/student/Desktop/GameDev/game-development-project-2020-2021-DuFourOlivier/GameDev_Olivier_DuFour_2EACL1/GameDev_Olivier_DuFour_2EACL1/Content/herochar sprites(new)/herochar_jump_double_anim_strip_3.png</File>
+    <File>D:/Users/student/Desktop/GameDev/game-development-project-2020-2021-DuFourOlivier/GameDev_Olivier_DuFour_2EACL1/GameDev_Olivier_DuFour_2EACL1/Content/herochar sprites(new)/herochar_jump_down_anim.gif</File>
+    <File>D:/Users/student/Desktop/GameDev/game-development-project-2020-2021-DuFourOlivier/GameDev_Olivier_DuFour_2EACL1/GameDev_Olivier_DuFour_2EACL1/Content/herochar sprites(new)/herochar_jump_down_anim_strip_3.png</File>
+    <File>D:/Users/student/Desktop/GameDev/game-development-project-2020-2021-DuFourOlivier/GameDev_Olivier_DuFour_2EACL1/GameDev_Olivier_DuFour_2EACL1/Content/herochar sprites(new)/herochar_jump_up_anim.gif</File>
+    <File>D:/Users/student/Desktop/GameDev/game-development-project-2020-2021-DuFourOlivier/GameDev_Olivier_DuFour_2EACL1/GameDev_Olivier_DuFour_2EACL1/Content/herochar sprites(new)/herochar_jump_up_anim_strip_3.png</File>
+    <File>D:/Users/student/Desktop/GameDev/game-development-project-2020-2021-DuFourOlivier/GameDev_Olivier_DuFour_2EACL1/GameDev_Olivier_DuFour_2EACL1/Content/herochar sprites(new)/herochar_pushing_foward_anim.gif</File>
+    <File>D:/Users/student/Desktop/GameDev/game-development-project-2020-2021-DuFourOlivier/GameDev_Olivier_DuFour_2EACL1/GameDev_Olivier_DuFour_2EACL1/Content/herochar sprites(new)/herochar_pushing_foward_anim_strip_6.png</File>
+    <File>D:/Users/student/Desktop/GameDev/game-development-project-2020-2021-DuFourOlivier/GameDev_Olivier_DuFour_2EACL1/GameDev_Olivier_DuFour_2EACL1/Content/herochar sprites(new)/herochar_run_anim.gif</File>
+    <File>D:/Users/student/Desktop/GameDev/game-development-project-2020-2021-DuFourOlivier/GameDev_Olivier_DuFour_2EACL1/GameDev_Olivier_DuFour_2EACL1/Content/herochar sprites(new)/herochar_run_anim_strip_6.png</File>
+    <File>D:/Users/student/Desktop/GameDev/game-development-project-2020-2021-DuFourOlivier/GameDev_Olivier_DuFour_2EACL1/GameDev_Olivier_DuFour_2EACL1/Content/herochar sprites(new)/herochar_spritesheet(new).png</File>
+    <File>D:/Users/student/Desktop/GameDev/game-development-project-2020-2021-DuFourOlivier/GameDev_Olivier_DuFour_2EACL1/GameDev_Olivier_DuFour_2EACL1/Content/herochar sprites(new)/herochar_sword_attack_anim.gif</File>
+    <File>D:/Users/student/Desktop/GameDev/game-development-project-2020-2021-DuFourOlivier/GameDev_Olivier_DuFour_2EACL1/GameDev_Olivier_DuFour_2EACL1/Content/herochar sprites(new)/herochar_sword_attack_anim_strip_4.png</File>
+    <File>D:/Users/student/Desktop/GameDev/game-development-project-2020-2021-DuFourOlivier/GameDev_Olivier_DuFour_2EACL1/GameDev_Olivier_DuFour_2EACL1/Content/herochar sprites(new)/hit_sparkle_anim.gif</File>
+    <File>D:/Users/student/Desktop/GameDev/game-development-project-2020-2021-DuFourOlivier/GameDev_Olivier_DuFour_2EACL1/GameDev_Olivier_DuFour_2EACL1/Content/herochar sprites(new)/hit_sparkle_anim_strip_4.png</File>
+    <File>D:/Users/student/Desktop/GameDev/game-development-project-2020-2021-DuFourOlivier/GameDev_Olivier_DuFour_2EACL1/GameDev_Olivier_DuFour_2EACL1/Content/herochar sprites(new)/sword_effect(new).gif</File>
+    <File>D:/Users/student/Desktop/GameDev/game-development-project-2020-2021-DuFourOlivier/GameDev_Olivier_DuFour_2EACL1/GameDev_Olivier_DuFour_2EACL1/Content/herochar sprites(new)/sword_effect_strip_4(new).png</File>
+    <File>D:/Users/student/Desktop/GameDev/game-development-project-2020-2021-DuFourOlivier/GameDev_Olivier_DuFour_2EACL1/GameDev_Olivier_DuFour_2EACL1/Content/hud elements/coins_hud.png</File>
+    <File>D:/Users/student/Desktop/GameDev/game-development-project-2020-2021-DuFourOlivier/GameDev_Olivier_DuFour_2EACL1/GameDev_Olivier_DuFour_2EACL1/Content/hud elements/fonts.png</File>
+    <File>D:/Users/student/Desktop/GameDev/game-development-project-2020-2021-DuFourOlivier/GameDev_Olivier_DuFour_2EACL1/GameDev_Olivier_DuFour_2EACL1/Content/hud elements/health_hud_left.png</File>
+    <File>D:/Users/student/Desktop/GameDev/game-development-project-2020-2021-DuFourOlivier/GameDev_Olivier_DuFour_2EACL1/GameDev_Olivier_DuFour_2EACL1/Content/hud elements/health_hud_middle.png</File>
+    <File>D:/Users/student/Desktop/GameDev/game-development-project-2020-2021-DuFourOlivier/GameDev_Olivier_DuFour_2EACL1/GameDev_Olivier_DuFour_2EACL1/Content/hud elements/health_hud_right.png</File>
+    <File>D:/Users/student/Desktop/GameDev/game-development-project-2020-2021-DuFourOlivier/GameDev_Olivier_DuFour_2EACL1/GameDev_Olivier_DuFour_2EACL1/Content/hud elements/health_menu_hud.png</File>
+    <File>D:/Users/student/Desktop/GameDev/game-development-project-2020-2021-DuFourOlivier/GameDev_Olivier_DuFour_2EACL1/GameDev_Olivier_DuFour_2EACL1/Content/hud elements/hearts_hud.png</File>
+    <File>D:/Users/student/Desktop/GameDev/game-development-project-2020-2021-DuFourOlivier/GameDev_Olivier_DuFour_2EACL1/GameDev_Olivier_DuFour_2EACL1/Content/hud elements/lifes_icon.png</File>
+    <File>D:/Users/student/Desktop/GameDev/game-development-project-2020-2021-DuFourOlivier/GameDev_Olivier_DuFour_2EACL1/GameDev_Olivier_DuFour_2EACL1/Content/hud elements/lost_hearts_anim.gif</File>
+    <File>D:/Users/student/Desktop/GameDev/game-development-project-2020-2021-DuFourOlivier/GameDev_Olivier_DuFour_2EACL1/GameDev_Olivier_DuFour_2EACL1/Content/hud elements/lost_hearts_anim_strip_5.png</File>
+    <File>D:/Users/student/Desktop/GameDev/game-development-project-2020-2021-DuFourOlivier/GameDev_Olivier_DuFour_2EACL1/GameDev_Olivier_DuFour_2EACL1/Content/hud elements/no_hearts_hud.png</File>
+    <File>D:/Users/student/Desktop/GameDev/game-development-project-2020-2021-DuFourOlivier/GameDev_Olivier_DuFour_2EACL1/GameDev_Olivier_DuFour_2EACL1/Content/hud elements/orbs_hud.png</File>
+    <File>D:/Users/student/Desktop/GameDev/game-development-project-2020-2021-DuFourOlivier/GameDev_Olivier_DuFour_2EACL1/GameDev_Olivier_DuFour_2EACL1/Content/hud elements/select_icon_anim.gif</File>
+    <File>D:/Users/student/Desktop/GameDev/game-development-project-2020-2021-DuFourOlivier/GameDev_Olivier_DuFour_2EACL1/GameDev_Olivier_DuFour_2EACL1/Content/hud elements/select_icon_anim_strip_5.png</File>
+    <File>D:/Users/student/Desktop/GameDev/game-development-project-2020-2021-DuFourOlivier/GameDev_Olivier_DuFour_2EACL1/GameDev_Olivier_DuFour_2EACL1/Content/Medieval_props_free.png</File>
+    <File>D:/Users/student/Desktop/GameDev/game-development-project-2020-2021-DuFourOlivier/GameDev_Olivier_DuFour_2EACL1/GameDev_Olivier_DuFour_2EACL1/Content/Medieval_tiles_free_2.0.png</File>
+    <File>D:/Users/student/Desktop/GameDev/game-development-project-2020-2021-DuFourOlivier/GameDev_Olivier_DuFour_2EACL1/GameDev_Olivier_DuFour_2EACL1/Content/miscellaneous sprites/antidote_potion.png</File>
+    <File>D:/Users/student/Desktop/GameDev/game-development-project-2020-2021-DuFourOlivier/GameDev_Olivier_DuFour_2EACL1/GameDev_Olivier_DuFour_2EACL1/Content/miscellaneous sprites/apple_item.png</File>
+    <File>D:/Users/student/Desktop/GameDev/game-development-project-2020-2021-DuFourOlivier/GameDev_Olivier_DuFour_2EACL1/GameDev_Olivier_DuFour_2EACL1/Content/miscellaneous sprites/arrow_plate_left.png</File>
+    <File>D:/Users/student/Desktop/GameDev/game-development-project-2020-2021-DuFourOlivier/GameDev_Olivier_DuFour_2EACL1/GameDev_Olivier_DuFour_2EACL1/Content/miscellaneous sprites/arrow_plate_right.png</File>
+    <File>D:/Users/student/Desktop/GameDev/game-development-project-2020-2021-DuFourOlivier/GameDev_Olivier_DuFour_2EACL1/GameDev_Olivier_DuFour_2EACL1/Content/miscellaneous sprites/bigflowers_props.png</File>
+    <File>D:/Users/student/Desktop/GameDev/game-development-project-2020-2021-DuFourOlivier/GameDev_Olivier_DuFour_2EACL1/GameDev_Olivier_DuFour_2EACL1/Content/miscellaneous sprites/bomb_on_ground_anim.gif</File>
+    <File>D:/Users/student/Desktop/GameDev/game-development-project-2020-2021-DuFourOlivier/GameDev_Olivier_DuFour_2EACL1/GameDev_Olivier_DuFour_2EACL1/Content/miscellaneous sprites/bomb_on_ground_anim_strip_8.png</File>
+    <File>D:/Users/student/Desktop/GameDev/game-development-project-2020-2021-DuFourOlivier/GameDev_Olivier_DuFour_2EACL1/GameDev_Olivier_DuFour_2EACL1/Content/miscellaneous sprites/bomb_thrown_anim.gif</File>
+    <File>D:/Users/student/Desktop/GameDev/game-development-project-2020-2021-DuFourOlivier/GameDev_Olivier_DuFour_2EACL1/GameDev_Olivier_DuFour_2EACL1/Content/miscellaneous sprites/bomb_thrown_anim_strip_3.png</File>
+    <File>D:/Users/student/Desktop/GameDev/game-development-project-2020-2021-DuFourOlivier/GameDev_Olivier_DuFour_2EACL1/GameDev_Olivier_DuFour_2EACL1/Content/miscellaneous sprites/buttom.png</File>
+    <File>D:/Users/student/Desktop/GameDev/game-development-project-2020-2021-DuFourOlivier/GameDev_Olivier_DuFour_2EACL1/GameDev_Olivier_DuFour_2EACL1/Content/miscellaneous sprites/buttom_pressed.png</File>
+    <File>D:/Users/student/Desktop/GameDev/game-development-project-2020-2021-DuFourOlivier/GameDev_Olivier_DuFour_2EACL1/GameDev_Olivier_DuFour_2EACL1/Content/miscellaneous sprites/coin_anim.gif</File>
+    <File>D:/Users/student/Desktop/GameDev/game-development-project-2020-2021-DuFourOlivier/GameDev_Olivier_DuFour_2EACL1/GameDev_Olivier_DuFour_2EACL1/Content/miscellaneous sprites/coin_anim_strip_6.png</File>
+    <File>D:/Users/student/Desktop/GameDev/game-development-project-2020-2021-DuFourOlivier/GameDev_Olivier_DuFour_2EACL1/GameDev_Olivier_DuFour_2EACL1/Content/miscellaneous sprites/coin_pickup_anim.gif</File>
+    <File>D:/Users/student/Desktop/GameDev/game-development-project-2020-2021-DuFourOlivier/GameDev_Olivier_DuFour_2EACL1/GameDev_Olivier_DuFour_2EACL1/Content/miscellaneous sprites/coin_pickup_anim_strip_6.png</File>
+    <File>D:/Users/student/Desktop/GameDev/game-development-project-2020-2021-DuFourOlivier/GameDev_Olivier_DuFour_2EACL1/GameDev_Olivier_DuFour_2EACL1/Content/miscellaneous sprites/door.png</File>
+    <File>D:/Users/student/Desktop/GameDev/game-development-project-2020-2021-DuFourOlivier/GameDev_Olivier_DuFour_2EACL1/GameDev_Olivier_DuFour_2EACL1/Content/miscellaneous sprites/drygrass_props.png</File>
+    <File>D:/Users/student/Desktop/GameDev/game-development-project-2020-2021-DuFourOlivier/GameDev_Olivier_DuFour_2EACL1/GameDev_Olivier_DuFour_2EACL1/Content/miscellaneous sprites/explosion_anim.gif</File>
+    <File>D:/Users/student/Desktop/GameDev/game-development-project-2020-2021-DuFourOlivier/GameDev_Olivier_DuFour_2EACL1/GameDev_Olivier_DuFour_2EACL1/Content/miscellaneous sprites/explosion_anim_strip_10.png</File>
+    <File>D:/Users/student/Desktop/GameDev/game-development-project-2020-2021-DuFourOlivier/GameDev_Olivier_DuFour_2EACL1/GameDev_Olivier_DuFour_2EACL1/Content/miscellaneous sprites/flowers_props.png</File>
+    <File>D:/Users/student/Desktop/GameDev/game-development-project-2020-2021-DuFourOlivier/GameDev_Olivier_DuFour_2EACL1/GameDev_Olivier_DuFour_2EACL1/Content/miscellaneous sprites/grass_props.png</File>
+    <File>D:/Users/student/Desktop/GameDev/game-development-project-2020-2021-DuFourOlivier/GameDev_Olivier_DuFour_2EACL1/GameDev_Olivier_DuFour_2EACL1/Content/miscellaneous sprites/health_potion.png</File>
+    <File>D:/Users/student/Desktop/GameDev/game-development-project-2020-2021-DuFourOlivier/GameDev_Olivier_DuFour_2EACL1/GameDev_Olivier_DuFour_2EACL1/Content/miscellaneous sprites/lever_turned_left.png</File>
+    <File>D:/Users/student/Desktop/GameDev/game-development-project-2020-2021-DuFourOlivier/GameDev_Olivier_DuFour_2EACL1/GameDev_Olivier_DuFour_2EACL1/Content/miscellaneous sprites/lever_turned_right.png</File>
+    <File>D:/Users/student/Desktop/GameDev/game-development-project-2020-2021-DuFourOlivier/GameDev_Olivier_DuFour_2EACL1/GameDev_Olivier_DuFour_2EACL1/Content/miscellaneous sprites/loot_box_anim.gif</File>
+    <File>D:/Users/student/Desktop/GameDev/game-development-project-2020-2021-DuFourOlivier/GameDev_Olivier_DuFour_2EACL1/GameDev_Olivier_DuFour_2EACL1/Content/miscellaneous sprites/loot_box_anim_opening.gif</File>
+    <File>D:/Users/student/Desktop/GameDev/game-development-project-2020-2021-DuFourOlivier/GameDev_Olivier_DuFour_2EACL1/GameDev_Olivier_DuFour_2EACL1/Content/miscellaneous sprites/loot_box_anim_opening_strip_6.png</File>
+    <File>D:/Users/student/Desktop/GameDev/game-development-project-2020-2021-DuFourOlivier/GameDev_Olivier_DuFour_2EACL1/GameDev_Olivier_DuFour_2EACL1/Content/miscellaneous sprites/loot_box_anim_strip_12.png</File>
+    <File>D:/Users/student/Desktop/GameDev/game-development-project-2020-2021-DuFourOlivier/GameDev_Olivier_DuFour_2EACL1/GameDev_Olivier_DuFour_2EACL1/Content/miscellaneous sprites/loot_box_open.png</File>
+    <File>D:/Users/student/Desktop/GameDev/game-development-project-2020-2021-DuFourOlivier/GameDev_Olivier_DuFour_2EACL1/GameDev_Olivier_DuFour_2EACL1/Content/miscellaneous sprites/meat_item.png</File>
+    <File>D:/Users/student/Desktop/GameDev/game-development-project-2020-2021-DuFourOlivier/GameDev_Olivier_DuFour_2EACL1/GameDev_Olivier_DuFour_2EACL1/Content/miscellaneous sprites/orb.png</File>
+    <File>D:/Users/student/Desktop/GameDev/game-development-project-2020-2021-DuFourOlivier/GameDev_Olivier_DuFour_2EACL1/GameDev_Olivier_DuFour_2EACL1/Content/miscellaneous sprites/orb_anim.gif</File>
+    <File>D:/Users/student/Desktop/GameDev/game-development-project-2020-2021-DuFourOlivier/GameDev_Olivier_DuFour_2EACL1/GameDev_Olivier_DuFour_2EACL1/Content/miscellaneous sprites/orb_anim_strip_6.png</File>
+    <File>D:/Users/student/Desktop/GameDev/game-development-project-2020-2021-DuFourOlivier/GameDev_Olivier_DuFour_2EACL1/GameDev_Olivier_DuFour_2EACL1/Content/miscellaneous sprites/orb_collected_anim.gif</File>
+    <File>D:/Users/student/Desktop/GameDev/game-development-project-2020-2021-DuFourOlivier/GameDev_Olivier_DuFour_2EACL1/GameDev_Olivier_DuFour_2EACL1/Content/miscellaneous sprites/orb_collected_anim_strip_5.png</File>
+    <File>D:/Users/student/Desktop/GameDev/game-development-project-2020-2021-DuFourOlivier/GameDev_Olivier_DuFour_2EACL1/GameDev_Olivier_DuFour_2EACL1/Content/miscellaneous sprites/root_props.png</File>
+    <File>D:/Users/student/Desktop/GameDev/game-development-project-2020-2021-DuFourOlivier/GameDev_Olivier_DuFour_2EACL1/GameDev_Olivier_DuFour_2EACL1/Content/miscellaneous sprites/save_point_anim.gif</File>
+    <File>D:/Users/student/Desktop/GameDev/game-development-project-2020-2021-DuFourOlivier/GameDev_Olivier_DuFour_2EACL1/GameDev_Olivier_DuFour_2EACL1/Content/miscellaneous sprites/save_point_anim_strip_9.png</File>
+    <File>D:/Users/student/Desktop/GameDev/game-development-project-2020-2021-DuFourOlivier/GameDev_Olivier_DuFour_2EACL1/GameDev_Olivier_DuFour_2EACL1/Content/miscellaneous sprites/save_point_saving_anim.gif</File>
+    <File>D:/Users/student/Desktop/GameDev/game-development-project-2020-2021-DuFourOlivier/GameDev_Olivier_DuFour_2EACL1/GameDev_Olivier_DuFour_2EACL1/Content/miscellaneous sprites/save_point_saving_anim_strip_3.png</File>
+    <File>D:/Users/student/Desktop/GameDev/game-development-project-2020-2021-DuFourOlivier/GameDev_Olivier_DuFour_2EACL1/GameDev_Olivier_DuFour_2EACL1/Content/miscellaneous sprites/spikes.png</File>
+    <File>D:/Users/student/Desktop/GameDev/game-development-project-2020-2021-DuFourOlivier/GameDev_Olivier_DuFour_2EACL1/GameDev_Olivier_DuFour_2EACL1/Content/miscellaneous sprites/spikes_trap.png</File>
+    <File>D:/Users/student/Desktop/GameDev/game-development-project-2020-2021-DuFourOlivier/GameDev_Olivier_DuFour_2EACL1/GameDev_Olivier_DuFour_2EACL1/Content/miscellaneous sprites/spikes_trap_hit_wall_dust_effect.gif</File>
+    <File>D:/Users/student/Desktop/GameDev/game-development-project-2020-2021-DuFourOlivier/GameDev_Olivier_DuFour_2EACL1/GameDev_Olivier_DuFour_2EACL1/Content/miscellaneous sprites/spikes_trap_hit_wall_dust_effect_strip_3.png</File>
+    <File>D:/Users/student/Desktop/GameDev/game-development-project-2020-2021-DuFourOlivier/GameDev_Olivier_DuFour_2EACL1/GameDev_Olivier_DuFour_2EACL1/Content/miscellaneous sprites/stone.png</File>
+    <File>D:/Users/student/Desktop/GameDev/game-development-project-2020-2021-DuFourOlivier/GameDev_Olivier_DuFour_2EACL1/GameDev_Olivier_DuFour_2EACL1/Content/miscellaneous sprites/strange_door_closed_anim.gif</File>
+    <File>D:/Users/student/Desktop/GameDev/game-development-project-2020-2021-DuFourOlivier/GameDev_Olivier_DuFour_2EACL1/GameDev_Olivier_DuFour_2EACL1/Content/miscellaneous sprites/strange_door_closed_anim_strip_10.png</File>
+    <File>D:/Users/student/Desktop/GameDev/game-development-project-2020-2021-DuFourOlivier/GameDev_Olivier_DuFour_2EACL1/GameDev_Olivier_DuFour_2EACL1/Content/miscellaneous sprites/strange_door_opening_anim.gif</File>
+    <File>D:/Users/student/Desktop/GameDev/game-development-project-2020-2021-DuFourOlivier/GameDev_Olivier_DuFour_2EACL1/GameDev_Olivier_DuFour_2EACL1/Content/miscellaneous sprites/strange_door_opening_anim_strip_14.png</File>
+    <File>D:/Users/student/Desktop/GameDev/game-development-project-2020-2021-DuFourOlivier/GameDev_Olivier_DuFour_2EACL1/GameDev_Olivier_DuFour_2EACL1/Content/miscellaneous sprites/tiki_torch_props.gif</File>
+    <File>D:/Users/student/Desktop/GameDev/game-development-project-2020-2021-DuFourOlivier/GameDev_Olivier_DuFour_2EACL1/GameDev_Olivier_DuFour_2EACL1/Content/miscellaneous sprites/tiki_torch_props_strip_12.png</File>
+    <File>D:/Users/student/Desktop/GameDev/game-development-project-2020-2021-DuFourOlivier/GameDev_Olivier_DuFour_2EACL1/GameDev_Olivier_DuFour_2EACL1/Content/miscellaneous sprites/trap_spikes_anim.gif</File>
+    <File>D:/Users/student/Desktop/GameDev/game-development-project-2020-2021-DuFourOlivier/GameDev_Olivier_DuFour_2EACL1/GameDev_Olivier_DuFour_2EACL1/Content/miscellaneous sprites/trap_spikes_anim_strip_7.png</File>
+    <File>D:/Users/student/Desktop/GameDev/game-development-project-2020-2021-DuFourOlivier/GameDev_Olivier_DuFour_2EACL1/GameDev_Olivier_DuFour_2EACL1/Content/miscellaneous sprites/trap_suspended_anim.gif</File>
+    <File>D:/Users/student/Desktop/GameDev/game-development-project-2020-2021-DuFourOlivier/GameDev_Olivier_DuFour_2EACL1/GameDev_Olivier_DuFour_2EACL1/Content/miscellaneous sprites/trap_suspended_anim_strip_18.png</File>
+    <File>D:/Users/student/Desktop/GameDev/game-development-project-2020-2021-DuFourOlivier/GameDev_Olivier_DuFour_2EACL1/GameDev_Olivier_DuFour_2EACL1/Content/miscellaneous sprites/vase.png</File>
+    <File>D:/Users/student/Desktop/GameDev/game-development-project-2020-2021-DuFourOlivier/GameDev_Olivier_DuFour_2EACL1/GameDev_Olivier_DuFour_2EACL1/Content/miscellaneous sprites/vase_breaking_anim.gif</File>
+    <File>D:/Users/student/Desktop/GameDev/game-development-project-2020-2021-DuFourOlivier/GameDev_Olivier_DuFour_2EACL1/GameDev_Olivier_DuFour_2EACL1/Content/miscellaneous sprites/vase_breaking_anim_strip_5.png</File>
+    <File>D:/Users/student/Desktop/GameDev/game-development-project-2020-2021-DuFourOlivier/GameDev_Olivier_DuFour_2EACL1/GameDev_Olivier_DuFour_2EACL1/Content/miscellaneous sprites/wood_slab_left.png</File>
+    <File>D:/Users/student/Desktop/GameDev/game-development-project-2020-2021-DuFourOlivier/GameDev_Olivier_DuFour_2EACL1/GameDev_Olivier_DuFour_2EACL1/Content/miscellaneous sprites/wood_slab_middle.png</File>
+    <File>D:/Users/student/Desktop/GameDev/game-development-project-2020-2021-DuFourOlivier/GameDev_Olivier_DuFour_2EACL1/GameDev_Olivier_DuFour_2EACL1/Content/miscellaneous sprites/wood_slab_right.png</File>
+    <File>D:/Users/student/Desktop/GameDev/game-development-project-2020-2021-DuFourOlivier/GameDev_Olivier_DuFour_2EACL1/GameDev_Olivier_DuFour_2EACL1/Content/miscellaneous sprites/wooden_plate.png</File>
+    <File>D:/Users/student/Desktop/GameDev/game-development-project-2020-2021-DuFourOlivier/GameDev_Olivier_DuFour_2EACL1/GameDev_Olivier_DuFour_2EACL1/Content/tiles and background_foreground/background.png</File>
+    <File>D:/Users/student/Desktop/GameDev/game-development-project-2020-2021-DuFourOlivier/GameDev_Olivier_DuFour_2EACL1/GameDev_Olivier_DuFour_2EACL1/Content/tiles and background_foreground/bg_0.png</File>
+    <File>D:/Users/student/Desktop/GameDev/game-development-project-2020-2021-DuFourOlivier/GameDev_Olivier_DuFour_2EACL1/GameDev_Olivier_DuFour_2EACL1/Content/tiles and background_foreground/bg_1.png</File>
+    <File>D:/Users/student/Desktop/GameDev/game-development-project-2020-2021-DuFourOlivier/GameDev_Olivier_DuFour_2EACL1/GameDev_Olivier_DuFour_2EACL1/Content/tiles and background_foreground/bg_2.png</File>
+    <File>D:/Users/student/Desktop/GameDev/game-development-project-2020-2021-DuFourOlivier/GameDev_Olivier_DuFour_2EACL1/GameDev_Olivier_DuFour_2EACL1/Content/tiles and background_foreground/fg_0.png</File>
+    <File>D:/Users/student/Desktop/GameDev/game-development-project-2020-2021-DuFourOlivier/GameDev_Olivier_DuFour_2EACL1/GameDev_Olivier_DuFour_2EACL1/Content/tiles and background_foreground/fg_1.png</File>
+    <File>D:/Users/student/Desktop/GameDev/game-development-project-2020-2021-DuFourOlivier/GameDev_Olivier_DuFour_2EACL1/GameDev_Olivier_DuFour_2EACL1/Content/tiles and background_foreground/tileset.png</File>
+    <File>D:/Users/student/Desktop/GameDev/game-development-project-2020-2021-DuFourOlivier/GameDev_Olivier_DuFour_2EACL1/GameDev_Olivier_DuFour_2EACL1/Content/tiles and background_foreground/waterfall_anim.gif</File>
+    <File>D:/Users/student/Desktop/GameDev/game-development-project-2020-2021-DuFourOlivier/GameDev_Olivier_DuFour_2EACL1/GameDev_Olivier_DuFour_2EACL1/Content/tiles and background_foreground/waterfall_anim_strip_4.png</File>
+    <File>D:/Users/student/Desktop/GameDev/game-development-project-2020-2021-DuFourOlivier/GameDev_Olivier_DuFour_2EACL1/GameDev_Olivier_DuFour_2EACL1/Content/tiles and background_foreground/waterfall_bottom_anim.gif</File>
+    <File>D:/Users/student/Desktop/GameDev/game-development-project-2020-2021-DuFourOlivier/GameDev_Olivier_DuFour_2EACL1/GameDev_Olivier_DuFour_2EACL1/Content/tiles and background_foreground/waterfall_bottom_anim_strip_4.png</File>
   </SourceFiles>
   <DestFiles>
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
     <File xsi:nil="true" />
     <File xsi:nil="true" />
     <File xsi:nil="true" />
