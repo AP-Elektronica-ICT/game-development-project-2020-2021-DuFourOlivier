@@ -53,7 +53,7 @@ namespace GameDev_Olivier_DuFour_2EACL1
             CollisionManager.Wereld.Add(new Blok(blokTexture, new Vector2(450, 350)));
             CollisionManager.Wereld.Add(new Blok(blokTexture, new Vector2(550, 400)));
             
-            player = new Player(texture, new KeyBoardReader(),blok);
+            player = new Player(texture, new KeyBoardReader());
         }
 
         protected override void Update(GameTime gameTime)

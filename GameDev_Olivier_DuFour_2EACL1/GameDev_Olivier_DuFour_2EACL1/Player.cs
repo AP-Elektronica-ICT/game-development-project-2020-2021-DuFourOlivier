@@ -27,9 +27,9 @@ namespace GameDev_Olivier_DuFour_2EACL1
 
         public Vector2 Position { get ; set ; }
 
-        public Player(Texture2D text, IInputReader reader,Blok blok)
+        public Player(Texture2D text, IInputReader reader)
         {
-            this.blokje = blok;
+            
             frames = new FramesPlayer();
             playerTexture = text;
             animatie = new AnimatiePlayer(frames);
