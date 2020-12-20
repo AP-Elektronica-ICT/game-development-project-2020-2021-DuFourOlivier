@@ -21,6 +21,7 @@ namespace GameDev_Olivier_DuFour_2EACL1
         int tilesetTilesWide;
         int tilesetTilesHigh;
         //
+        Rectangle bounds;
         private GraphicsDeviceManager _graphics;
         private SpriteBatch _spriteBatch;
 
@@ -41,6 +42,7 @@ namespace GameDev_Olivier_DuFour_2EACL1
             // TODO: Add your initialization logic here
 
             collisionManager = new CollisionManager();
+            bounds = new Rectangle(-160, -480, 0, 0);
 
             base.Initialize();
         }
@@ -89,6 +91,22 @@ namespace GameDev_Olivier_DuFour_2EACL1
             //    Debug.WriteLine("Collision");
             //}
             base.Update(gameTime);
+
+            KeyboardState keyState = Keyboard.GetState();
+
+            int scrollx = 0, scrolly = 0;
+
+            if (keyState.IsKeyDown(Keys.Left))
+                scrollx = 10;
+            if (keyState.IsKeyDown(Keys.Right))
+                scrollx = -10;
+            if (keyState.IsKeyDown(Keys.Up))
+                scrolly = -10;
+            if (keyState.IsKeyDown(Keys.Down))
+                scrolly = 10;
+
+            bounds.X = bounds.X + scrollx;
+            bounds.Y = bounds.Y + scrolly;
         }
 
         protected override void Draw(GameTime gameTime)
@@ -98,8 +116,8 @@ namespace GameDev_Olivier_DuFour_2EACL1
             // TODO: Add your drawing code here
             _spriteBatch.Begin();
             // Draw Map
-            for (var j = 0; j < map.Layers.Count; j++)
-            {
+            //for (var j = 0; j < map.Layers.Count; j++)
+            //{
 
                 for (var i = 0; i < map.Layers[0].Tiles.Count; i++)
                 {
@@ -121,11 +139,14 @@ namespace GameDev_Olivier_DuFour_2EACL1
 
                         Rectangle tilesetRec = new Rectangle(tileWidth * column, tileHeight * row, tileWidth, tileHeight);
 
-                        _spriteBatch.Draw(tileset, new Rectangle((int)x, (int)y, tileWidth, tileHeight), tilesetRec, Color.White);
+                        
+                        Rectangle newView = new Rectangle((int)x + bounds.X, (int)y + bounds.Y, tileWidth, tileHeight);
+                        _spriteBatch.Draw(tileset, newView, tilesetRec, Color.White);
                     }
                 }
-            }
+            //}
             // draw player
+
             player.Draw(_spriteBatch);
             foreach (var blok in CollisionManager.Wereld)
             {
