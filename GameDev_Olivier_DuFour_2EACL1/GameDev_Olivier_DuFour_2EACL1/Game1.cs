@@ -5,6 +5,7 @@ using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
 using System;
+using System.Collections.Generic;
 using System.Diagnostics;
 using TiledSharp;
 
@@ -39,12 +40,16 @@ namespace GameDev_Olivier_DuFour_2EACL1
 
         protected override void Initialize()
         {
+            _graphics.PreferredBackBufferWidth = 1600;
+            _graphics.PreferredBackBufferHeight = 960;
+            _graphics.ApplyChanges();
             // TODO: Add your initialization logic here
 
             collisionManager = new CollisionManager();
-            bounds = new Rectangle(-160, -480, 0, 0);
+            bounds = new Rectangle(0, 0, 0, 0);
 
             base.Initialize();
+
         }
 
         protected override void LoadContent()
@@ -55,7 +60,7 @@ namespace GameDev_Olivier_DuFour_2EACL1
             InitializeGameObjects();
 
             // TODO: use this.Content to load your game content here
-            map = new TmxMap("Content/try.tmx");
+            map = new TmxMap("Content/Level1Complete.tmx");
             tileset = Content.Load<Texture2D>(map.Tilesets[0].Name.ToString());
 
             tileWidth = map.Tilesets[0].TileWidth;
@@ -63,15 +68,22 @@ namespace GameDev_Olivier_DuFour_2EACL1
 
             tilesetTilesWide = tileset.Width / tileWidth;
             tilesetTilesHigh = tileset.Height / tileHeight;
+
+            List<Rectangle> mapblok = new List<Rectangle>();
+
+            foreach (var p in map.ObjectGroups[0].Objects)
+            {
+                mapblok.Add(new Rectangle((int)p.X, (int)p.Y, (int)p.Width, (int)p.Height));
+            }
         }
 
         private void InitializeGameObjects()
         {
-            CollisionManager.Wereld.Add(new Blok(blokTexture, new Vector2(150, 400)));
-            CollisionManager.Wereld.Add(new Blok(blokTexture, new Vector2(250, 350)));
-            CollisionManager.Wereld.Add(new Blok(blokTexture, new Vector2(350, 300)));
-            CollisionManager.Wereld.Add(new Blok(blokTexture, new Vector2(450, 350)));
-            CollisionManager.Wereld.Add(new Blok(blokTexture, new Vector2(550, 400)));
+            //CollisionManager.Wereld.Add(new Blok(blokTexture, new Vector2(150, 400)));
+            //CollisionManager.Wereld.Add(new Blok(blokTexture, new Vector2(250, 350)));
+            //CollisionManager.Wereld.Add(new Blok(blokTexture, new Vector2(350, 300)));
+            //CollisionManager.Wereld.Add(new Blok(blokTexture, new Vector2(450, 350)));
+            //CollisionManager.Wereld.Add(new Blok(blokTexture, new Vector2(550, 400)));
             
             player = new Player(texture, new KeyBoardReader());
         }
@@ -92,21 +104,6 @@ namespace GameDev_Olivier_DuFour_2EACL1
             //}
             base.Update(gameTime);
 
-            KeyboardState keyState = Keyboard.GetState();
-
-            int scrollx = 0, scrolly = 0;
-
-            if (keyState.IsKeyDown(Keys.Left))
-                scrollx = 10;
-            if (keyState.IsKeyDown(Keys.Right))
-                scrollx = -10;
-            if (keyState.IsKeyDown(Keys.Up))
-                scrolly = -10;
-            if (keyState.IsKeyDown(Keys.Down))
-                scrolly = 10;
-
-            bounds.X = bounds.X + scrollx;
-            bounds.Y = bounds.Y + scrolly;
         }
 
         protected override void Draw(GameTime gameTime)
@@ -116,12 +113,12 @@ namespace GameDev_Olivier_DuFour_2EACL1
             // TODO: Add your drawing code here
             _spriteBatch.Begin();
             // Draw Map
-            //for (var j = 0; j < map.Layers.Count; j++)
-            //{
+            for (var j = 0; j < map.Layers.Count; j++)
+            {
 
-                for (var i = 0; i < map.Layers[0].Tiles.Count; i++)
+                for (var i = 0; i < map.Layers[j].Tiles.Count; i++)
                 {
-                    int gid = map.Layers[0].Tiles[i].Gid;
+                    int gid = map.Layers[j].Tiles[i].Gid;
 
                     // Empty tile, do nothing
                     if (gid == 0)
@@ -144,14 +141,14 @@ namespace GameDev_Olivier_DuFour_2EACL1
                         _spriteBatch.Draw(tileset, newView, tilesetRec, Color.White);
                     }
                 }
-            //}
+            }
             // draw player
 
             player.Draw(_spriteBatch);
-            foreach (var blok in CollisionManager.Wereld)
-            {
-                blok.Draw(_spriteBatch);
-            }
+            //foreach (var blok in CollisionManager.Wereld)
+            //{
+            //    blok.Draw(_spriteBatch);
+            //}
             
             _spriteBatch.End();
 

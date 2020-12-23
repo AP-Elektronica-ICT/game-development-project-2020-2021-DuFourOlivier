@@ -32,7 +32,7 @@ namespace GameDev_Olivier_DuFour_2EACL1.Commands
             }
             if (!(collisionManager.CheckFuturMovements(futureY)))
             {
-                KeyBoardReader.startY = 335;
+                KeyBoardReader.startY = 820;
                 if (KeyBoardReader.jumping==false && player.Position.Y<=KeyBoardReader.startY)
                 //If it's farther than ground
                 {

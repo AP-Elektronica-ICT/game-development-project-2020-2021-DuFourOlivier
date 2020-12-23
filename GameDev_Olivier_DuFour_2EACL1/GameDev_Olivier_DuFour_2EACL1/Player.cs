@@ -33,7 +33,7 @@ namespace GameDev_Olivier_DuFour_2EACL1
             frames = new FramesPlayer();
             playerTexture = text;
             animatie = new AnimatiePlayer(frames);
-            Position = new Vector2(10, 365);
+            Position = new Vector2(120, 820);
             this.inputReader = reader;
             moveCommand = new MoveCommand();
 

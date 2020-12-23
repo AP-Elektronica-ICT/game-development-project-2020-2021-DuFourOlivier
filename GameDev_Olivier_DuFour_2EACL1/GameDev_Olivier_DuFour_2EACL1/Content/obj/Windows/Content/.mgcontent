@@ -127,6 +127,7 @@
     <File>D:/Users/student/Desktop/GameDev/game-development-project-2020-2021-DuFourOlivier/GameDev_Olivier_DuFour_2EACL1/GameDev_Olivier_DuFour_2EACL1/Content/hud elements/select_icon_anim.gif</File>
     <File>D:/Users/student/Desktop/GameDev/game-development-project-2020-2021-DuFourOlivier/GameDev_Olivier_DuFour_2EACL1/GameDev_Olivier_DuFour_2EACL1/Content/hud elements/select_icon_anim_strip_5.png</File>
     <File>D:/Users/student/Desktop/GameDev/game-development-project-2020-2021-DuFourOlivier/GameDev_Olivier_DuFour_2EACL1/GameDev_Olivier_DuFour_2EACL1/Content/mainlevbuild.png</File>
+    <File>D:/Users/student/Desktop/GameDev/game-development-project-2020-2021-DuFourOlivier/GameDev_Olivier_DuFour_2EACL1/GameDev_Olivier_DuFour_2EACL1/Content/mainlevbuild-1.png (1).png</File>
     <File>D:/Users/student/Desktop/GameDev/game-development-project-2020-2021-DuFourOlivier/GameDev_Olivier_DuFour_2EACL1/GameDev_Olivier_DuFour_2EACL1/Content/Medieval_props_free.png</File>
     <File>D:/Users/student/Desktop/GameDev/game-development-project-2020-2021-DuFourOlivier/GameDev_Olivier_DuFour_2EACL1/GameDev_Olivier_DuFour_2EACL1/Content/Medieval_tiles_free_2.0.png</File>
     <File>D:/Users/student/Desktop/GameDev/game-development-project-2020-2021-DuFourOlivier/GameDev_Olivier_DuFour_2EACL1/GameDev_Olivier_DuFour_2EACL1/Content/miscellaneous sprites/antidote_potion.png</File>
@@ -204,6 +205,7 @@
     <File>D:/Users/student/Desktop/GameDev/game-development-project-2020-2021-DuFourOlivier/GameDev_Olivier_DuFour_2EACL1/GameDev_Olivier_DuFour_2EACL1/Content/tiles and background_foreground/waterfall_bottom_anim_strip_4.png</File>
   </SourceFiles>
   <DestFiles>
+    <File xsi:nil="true" />
     <File xsi:nil="true" />
     <File xsi:nil="true" />
     <File xsi:nil="true" />

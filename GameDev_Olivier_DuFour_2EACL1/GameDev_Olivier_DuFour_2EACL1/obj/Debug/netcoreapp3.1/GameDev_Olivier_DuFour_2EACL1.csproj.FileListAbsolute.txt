@@ -234,3 +234,8 @@ D:\Users\student\Desktop\GameDev\game-development-project-2020-2021-DuFourOlivie
 D:\Users\student\Desktop\GameDev\game-development-project-2020-2021-DuFourOlivier\GameDev_Olivier_DuFour_2EACL1\GameDev_Olivier_DuFour_2EACL1\bin\Debug\netcoreapp3.1\Content\tiles and background_foreground\waterfall_bottom_anim_strip_4.xnb
 D:\Users\student\Desktop\GameDev\game-development-project-2020-2021-DuFourOlivier\GameDev_Olivier_DuFour_2EACL1\GameDev_Olivier_DuFour_2EACL1\bin\Debug\netcoreapp3.1\Content\background_obj.xnb
 D:\Users\student\Desktop\GameDev\game-development-project-2020-2021-DuFourOlivier\GameDev_Olivier_DuFour_2EACL1\GameDev_Olivier_DuFour_2EACL1\bin\Debug\netcoreapp3.1\Content\mainlevbuild.xnb
+D:\Users\student\Desktop\GameDev\game-development-project-2020-2021-DuFourOlivier\GameDev_Olivier_DuFour_2EACL1\GameDev_Olivier_DuFour_2EACL1\bin\Debug\netcoreapp3.1\Content\Level1.tmx
+D:\Users\student\Desktop\GameDev\game-development-project-2020-2021-DuFourOlivier\GameDev_Olivier_DuFour_2EACL1\GameDev_Olivier_DuFour_2EACL1\bin\Debug\netcoreapp3.1\Content\lol.tmx
+D:\Users\student\Desktop\GameDev\game-development-project-2020-2021-DuFourOlivier\GameDev_Olivier_DuFour_2EACL1\GameDev_Olivier_DuFour_2EACL1\bin\Debug\netcoreapp3.1\Content\LevelUno.tmx
+D:\Users\student\Desktop\GameDev\game-development-project-2020-2021-DuFourOlivier\GameDev_Olivier_DuFour_2EACL1\GameDev_Olivier_DuFour_2EACL1\bin\Debug\netcoreapp3.1\Content\mainlevbuild-1.png (1).xnb
+D:\Users\student\Desktop\GameDev\game-development-project-2020-2021-DuFourOlivier\GameDev_Olivier_DuFour_2EACL1\GameDev_Olivier_DuFour_2EACL1\bin\Debug\netcoreapp3.1\Content\Level1Complete.tmx
