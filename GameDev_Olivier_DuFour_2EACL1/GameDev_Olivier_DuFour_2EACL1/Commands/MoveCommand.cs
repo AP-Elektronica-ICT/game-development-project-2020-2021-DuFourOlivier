@@ -29,6 +29,10 @@ namespace GameDev_Olivier_DuFour_2EACL1.Commands
             {
                 Debug.WriteLine("U Die");
             }
+            if (collisionManager.CheckFinish(futureY) || collisionManager.CheckFinish(futureX))
+            {
+                Debug.WriteLine("Level Complete");
+            }
             if (!collisionManager.CheckFuturMovements(futureX))
             {
                 

@@ -172,22 +172,22 @@
 </data>
  </layer>
  <objectgroup id="6" name="Foreground">
-  <object id="6" x="0" y="640" width="78.1818" height="299.636"/>
+  <object id="6" x="0" y="640" width="66.1818" height="299.636"/>
   <object id="7" x="77.4545" y="940.364" width="262" height="19.6364"/>
-  <object id="9" x="78.25" y="800.5" width="71.25" height="14.25"/>
-  <object id="10" x="266" y="860.5" width="71" height="18.75"/>
-  <object id="11" x="338" y="512" width="92.25" height="426.5"/>
-  <object id="12" x="266.25" y="668.75" width="71.5" height="19.75"/>
-  <object id="13" x="561.5" y="415.5" width="61.25" height="64.25"/>
+  <object id="9" x="78.25" y="800.5" width="33.9167" height="2.25"/>
+  <object id="10" x="296.667" y="860.5" width="40.3333"/>
+  <object id="11" x="350" y="512" width="66.9167" height="426.5"/>
+  <object id="12" x="294.25" y="668.75" width="43.5"/>
+  <object id="13" x="578.833" y="415.5" width="13.25" height="64.25"/>
   <object id="14" x="430.364" y="941.273" width="324.909" height="19.0909"/>
-  <object id="15" x="754.25" y="287.75" width="91.5" height="653.5"/>
+  <object id="15" x="768.917" y="287.75" width="66.1667" height="653.5"/>
   <object id="16" x="847.25" y="940.5" width="752.5" height="19.75"/>
-  <object id="17" x="1040.25" y="736" width="63.25" height="63.5"/>
-  <object id="18" x="975.75" y="479.875" width="64.125" height="63.375"/>
-  <object id="19" x="1104.5" y="256" width="62.75" height="63.25"/>
-  <object id="20" x="1297" y="352" width="61.6667" height="63"/>
-  <object id="21" x="1232.33" y="576" width="62.6667" height="62.6667"/>
-  <object id="22" x="1465.33" y="788" width="79.3333" height="34"/>
+  <object id="17" x="1060.25" y="736" width="19.25" height="27.5"/>
+  <object id="18" x="998.417" y="479.875" width="14.7917" height="63.375"/>
+  <object id="19" x="1127.17" y="256" width="12.0833" height="36.5833"/>
+  <object id="20" x="1319.67" y="352" width="13.6667" height="32.3333"/>
+  <object id="21" x="1261.67" y="576" width="13.3333" height="32"/>
+  <object id="22" x="1473.33" y="788" width="71.3333" height="22"/>
  </objectgroup>
  <objectgroup id="9" name="Finish">
   <object id="35" x="1490" y="739.333" width="37.3333" height="48.6667">

@@ -79,6 +79,11 @@ namespace GameDev_Olivier_DuFour_2EACL1
                 CollisionManager.traps.Add(new Blok(new Rectangle((int)p.X, (int)p.Y, (int)p.Width, (int)p.Height)));
                 
             }
+            foreach (var p in map.ObjectGroups[1].Objects)
+            {
+                CollisionManager.finish.Add(new Blok(new Rectangle((int)p.X, (int)p.Y, (int)p.Width, (int)p.Height)));
+
+            }
         }
 
         private void InitializeGameObjects()
