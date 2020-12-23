@@ -10,6 +10,7 @@ namespace GameDev_Olivier_DuFour_2EACL1.Collision
    public class CollisionManager
     {
         public static List<Blok> Wereld = new List<Blok>();
+        public static List<Blok> traps = new List<Blok>();
         public bool CheckCollision(Rectangle rect1, Rectangle rect2)
         {
             if (rect1.Intersects(rect2))
@@ -32,6 +33,20 @@ namespace GameDev_Olivier_DuFour_2EACL1.Collision
             }
             return false;
         }
+        public bool CheckTrap(Rectangle player)
+        {
+            foreach (var blok in traps)
+            {
+                if (CheckCollision(player, blok.CollisionRectangle))
+                {
+                    KeyBoardReader.startY = blok.CollisionRectangle.Y - 140;
+                    return true;
+                }
+
+            }
+            return false;
+        }
+
 
 
     }

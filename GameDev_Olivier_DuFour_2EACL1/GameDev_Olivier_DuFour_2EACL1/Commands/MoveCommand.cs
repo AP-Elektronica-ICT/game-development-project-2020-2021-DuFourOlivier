@@ -25,6 +25,10 @@ namespace GameDev_Olivier_DuFour_2EACL1.Commands
             direction *= speed;
             Rectangle futureX = new Rectangle((int)(player.Position.X + direction.X),(int)(player.Position.Y), player.CollisionRectangle.Width, player.CollisionRectangle.Height);
             Rectangle futureY = new Rectangle((int)(player.Position.X), (int)(player.Position.Y + direction.Y), player.CollisionRectangle.Width, player.CollisionRectangle.Height);
+            if (collisionManager.CheckTrap(futureY)|| collisionManager.CheckTrap(futureX))
+            {
+                Debug.WriteLine("U Die");
+            }
             if (!collisionManager.CheckFuturMovements(futureX))
             {
                 
