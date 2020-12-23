@@ -54,18 +54,17 @@ namespace GameDev_Olivier_DuFour_2EACL1
 
         protected override void LoadContent()
         {
+            // Load content for player, map
             _spriteBatch = new SpriteBatch(GraphicsDevice);
             texture = Content.Load<Texture2D>("character");
             blokTexture = Content.Load<Texture2D>("blok");
             InitializeGameObjects();
 
-            // TODO: use this.Content to load your game content here
+            // load map + tileset
             map = new TmxMap("Content/Level1Complete.tmx");
             tileset = Content.Load<Texture2D>(map.Tilesets[0].Name.ToString());
-
             tileWidth = map.Tilesets[0].TileWidth;
             tileHeight = map.Tilesets[0].TileHeight;
-
             tilesetTilesWide = tileset.Width / tileWidth;
             tilesetTilesHigh = tileset.Height / tileHeight;
 
@@ -73,12 +72,18 @@ namespace GameDev_Olivier_DuFour_2EACL1
 
             foreach (var p in map.ObjectGroups[0].Objects)
             {
-                mapblok.Add(new Rectangle((int)p.X, (int)p.Y, (int)p.Width, (int)p.Height));
+                CollisionManager.Wereld.Add(new Blok(new Rectangle((int)p.X, (int)p.Y, (int)p.Width, (int)p.Height)));
+                Debug.WriteLine(mapblok);
             }
         }
 
         private void InitializeGameObjects()
         {
+            //foreach (var o in map.ObjectGroups[0].Objects)
+            //{
+            //    CollisionManager.Wereld.Add(new Blok(new Rectangle((int)o.X, (int)o.Y, (int)o.Width, (int)o.Height)));
+            //}
+          
             //CollisionManager.Wereld.Add(new Blok(blokTexture, new Vector2(150, 400)));
             //CollisionManager.Wereld.Add(new Blok(blokTexture, new Vector2(250, 350)));
             //CollisionManager.Wereld.Add(new Blok(blokTexture, new Vector2(350, 300)));

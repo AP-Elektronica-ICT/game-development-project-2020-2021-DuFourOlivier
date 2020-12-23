@@ -14,18 +14,15 @@ namespace GameDev_Olivier_DuFour_2EACL1.World
         public Rectangle DeelRectangle;
 
 
-        public Blok(Texture2D texture, Vector2 pos)
+        public Blok(Rectangle rec)
         {
-            DeelRectangle = new Rectangle(0, 0, 80, 80);
-            _texture = texture;
-            Position = pos;
-            CollisionRectangle = new Rectangle((int)Position.X, (int)Position.Y, 80, 80);
+            CollisionRectangle = rec;
         }
 
-        public void Draw(SpriteBatch spriteBatch)
-        {
-            spriteBatch.Draw(_texture, Position,DeelRectangle, Color.AliceBlue);
-        }
+        //public void Draw(SpriteBatch spriteBatch)
+        //{
+        //    spriteBatch.Draw(_texture, Position,DeelRectangle, Color.AliceBlue);
+        //}
 
         public void Update()
         {
