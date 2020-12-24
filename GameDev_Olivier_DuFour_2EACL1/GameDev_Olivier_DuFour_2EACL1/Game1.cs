@@ -61,7 +61,7 @@ namespace GameDev_Olivier_DuFour_2EACL1
             InitializeGameObjects();
 
             // load map + tileset
-            map = new TmxMap("Content/Level1Complete.tmx");
+            map = new TmxMap("Content/Level2Complete.tmx");
             tileset = Content.Load<Texture2D>(map.Tilesets[0].Name.ToString());
             tileWidth = map.Tilesets[0].TileWidth;
             tileHeight = map.Tilesets[0].TileHeight;

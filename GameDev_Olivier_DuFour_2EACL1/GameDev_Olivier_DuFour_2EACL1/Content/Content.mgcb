@@ -1483,6 +1483,9 @@
 #begin Level1Complete.tmx
 /copy:Level1Complete.tmx
 
+#begin Level2Complete.tmx
+/copy:Level2Complete.tmx
+
 #begin LevelUno.tmx
 /copy:LevelUno.tmx
 
