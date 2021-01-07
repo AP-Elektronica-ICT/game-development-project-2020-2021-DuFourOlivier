@@ -975,6 +975,18 @@
 /processorParam:TextureFormat=Compressed
 /build:Fonts/Font1.spritefont
 
+#begin GameOver.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:GameOver.png
+
 #begin herochar sprites(new)/herochar_after_jump_dust_anim.gif
 /importer:TextureImporter
 /processor:TextureProcessor
@@ -2322,6 +2334,18 @@
 /processorParam:TextureFormat=Color
 /build:miscellaneous sprites/wooden_plate.png
 
+#begin StartScherm.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:StartScherm.png
+
 #begin tiles and background_foreground/background.png
 /importer:TextureImporter
 /processor:TextureProcessor
@@ -2456,4 +2480,16 @@
 
 #begin try.tmx
 /copy:try.tmx
+
+#begin Victory.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Victory.png
 

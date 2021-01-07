@@ -8,38 +8,32 @@ using Microsoft.Xna.Framework.Content;
 using Microsoft.Xna.Framework.Graphics;
 using GameDev_Olivier_DuFour_2EACL1.Controls;
 using System.Diagnostics;
+using GameDev_Olivier_DuFour_2EACL1.States;
 
-namespace GameDev_Olivier_DuFour_2EACL1.States
+namespace GameDev_Olivier_DuFour_2EACL1.SceneManager.States
 {
-    public class MenuState : State
+    public class DeathState : State
     {
         private List<Component> _components;
-
-        public MenuState(Game1 game, GraphicsDevice graphicsDevice, ContentManager content)
+        private Texture2D backgroundScreen;
+        public DeathState(Game1 game, GraphicsDevice graphicsDevice, ContentManager content)
           : base(game, graphicsDevice, content)
         {
             var buttonTexture = _content.Load<Texture2D>("Controls/ThrButton");
             var buttonFont = _content.Load<SpriteFont>("Fonts/Font1");
+            backgroundScreen = _content.Load<Texture2D>("GameOver");
 
             var newGameButton = new Button(buttonTexture, buttonFont)
             {
-                Position = new Vector2(720, 300),
-                Text = "Level 1",
+                Position = new Vector2(720, 450),
+                Text = "Main Menu",
             };
 
             newGameButton.Click += NewGameButton_Click;
 
-            var loadGameButton = new Button(buttonTexture, buttonFont)
-            {
-                Position = new Vector2(720, 350),
-                Text = "Level 2",
-            };
-
-            loadGameButton.Click += LoadGameButton_Click;
-
             var quitGameButton = new Button(buttonTexture, buttonFont)
             {
-                Position = new Vector2(720, 400),
+                Position = new Vector2(720, 550),
                 Text = "Quit Game",
             };
 
@@ -48,7 +42,6 @@ namespace GameDev_Olivier_DuFour_2EACL1.States
             _components = new List<Component>()
       {
         newGameButton,
-        loadGameButton,
         quitGameButton,
       };
         }
@@ -56,21 +49,17 @@ namespace GameDev_Olivier_DuFour_2EACL1.States
         public override void Draw(GameTime gameTime, SpriteBatch spriteBatch)
         {
             spriteBatch.Begin();
-
+            spriteBatch.Draw(backgroundScreen, new Rectangle(0, 0, 1600, 960), Color.White);
             foreach (var component in _components)
                 component.Draw(gameTime, spriteBatch);
 
             spriteBatch.End();
         }
 
-        private void LoadGameButton_Click(object sender, EventArgs e)
-        {
-            Console.WriteLine("Level 2");
-        }
 
         private void NewGameButton_Click(object sender, EventArgs e)
         {
-            _game.ChangeState(new GameState(_game, _graphicsDevice, _content));
+            _game.ChangeState(new MenuState(_game, _graphicsDevice, _content));
         }
 
         public override void PostUpdate(GameTime gameTime)
@@ -86,9 +75,10 @@ namespace GameDev_Olivier_DuFour_2EACL1.States
 
         private void QuitGameButton_Click(object sender, EventArgs e)
         {
-           Debug.WriteLine("clicked");
+            Debug.WriteLine("clicked");
             _game.Exit();
 
         }
     }
 }
+

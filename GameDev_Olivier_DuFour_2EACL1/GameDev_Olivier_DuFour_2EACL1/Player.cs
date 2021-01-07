@@ -11,11 +11,13 @@ using System.Text;
 using System.Diagnostics;
 using GameDev_Olivier_DuFour_2EACL1.Frames;
 using GameDev_Olivier_DuFour_2EACL1.World;
+using GameDev_Olivier_DuFour_2EACL1.States;
 
 namespace GameDev_Olivier_DuFour_2EACL1
 {
     public class Player:IGameObject, ITransform
     {
+       private PlayerPosition postieLevel;
        private Texture2D playerTexture;
        private AnimatiePlayer animatie;
        private FramesPlayer frames;
@@ -29,11 +31,11 @@ namespace GameDev_Olivier_DuFour_2EACL1
 
         public Player(Texture2D text, IInputReader reader)
         {
-            
+            postieLevel = new PlayerPosition();
             frames = new FramesPlayer();
             playerTexture = text;
             animatie = new AnimatiePlayer(frames);
-            Position = new Vector2(120, 820);
+            Position = postieLevel.Postions[GameState.level];
             this.inputReader = reader;
             moveCommand = new MoveCommand();
 
