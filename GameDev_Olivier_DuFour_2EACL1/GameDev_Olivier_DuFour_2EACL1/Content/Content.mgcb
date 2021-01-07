@@ -61,6 +61,18 @@
 /processorParam:TextureFormat=Color
 /build:Controls/button.png
 
+#begin Controls/ThrButton.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Controls/ThrButton.png
+
 #begin enemies sprites/bomber goblin/bomber_goblin_attack_anim.gif
 /importer:TextureImporter
 /processor:TextureProcessor
@@ -955,6 +967,13 @@
 /processorParam:PremultiplyAlpha=True
 /processorParam:TextureFormat=Compressed
 /build:Fonts/Font.spritefont
+
+#begin Fonts/Font1.spritefont
+/importer:FontDescriptionImporter
+/processor:FontDescriptionProcessor
+/processorParam:PremultiplyAlpha=True
+/processorParam:TextureFormat=Compressed
+/build:Fonts/Font1.spritefont
 
 #begin herochar sprites(new)/herochar_after_jump_dust_anim.gif
 /importer:TextureImporter

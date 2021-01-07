@@ -1,5 +1,6 @@
 ﻿using GameDev_Olivier_DuFour_2EACL1.Collision;
 using GameDev_Olivier_DuFour_2EACL1.Input;
+using GameDev_Olivier_DuFour_2EACL1.States;
 using GameDev_Olivier_DuFour_2EACL1.World;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
@@ -13,6 +14,15 @@ namespace GameDev_Olivier_DuFour_2EACL1
 {
     public class Game1 : Game
     {
+        //gamestates
+        private State _currentState;
+
+        private State _nextState;
+
+        public void ChangeState(State state)
+        {
+            _nextState = state;
+        }
         // Tilesharp
         TmxMap map;
         Texture2D tileset;
@@ -40,6 +50,8 @@ namespace GameDev_Olivier_DuFour_2EACL1
 
         protected override void Initialize()
         {
+            IsMouseVisible = true;
+
             _graphics.PreferredBackBufferWidth = 1600;
             _graphics.PreferredBackBufferHeight = 960;
             _graphics.ApplyChanges();
@@ -59,6 +71,8 @@ namespace GameDev_Olivier_DuFour_2EACL1
             texture = Content.Load<Texture2D>("character");
             blokTexture = Content.Load<Texture2D>("blok");
             InitializeGameObjects();
+            // gamestate
+            _currentState = new MenuState(this, _graphics.GraphicsDevice, Content);
 
             // load map + tileset
             map = new TmxMap("Content/Level1Complete.tmx");
@@ -108,7 +122,16 @@ namespace GameDev_Olivier_DuFour_2EACL1
 
             // TODO: Add your update logic here
             player.Update(gameTime);
+            if (_nextState != null)
+            {
+                _currentState = _nextState;
 
+                _nextState = null;
+            }
+
+            _currentState.Update(gameTime);
+
+            _currentState.PostUpdate(gameTime);
 
             //if (collisionManager.CheckCollision(player.CollisionRectangle, blok.CollisionRectangle))
             //{
@@ -161,8 +184,10 @@ namespace GameDev_Olivier_DuFour_2EACL1
             //{
             //    blok.Draw(_spriteBatch);
             //}
-            
-            _spriteBatch.End();
+           
+
+            _spriteBatch.End(); 
+            _currentState.Draw(gameTime, _spriteBatch);
 
             base.Draw(gameTime);
         }
