@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "/3d4AbtZUPoJLakMUE3fJ+sBU0cqBQ6MSdwKPyRHjOZGQCJRPu/ghGHgPNtfVfMhjeKL5S0Wfn+dHHXJKUBK4A==",
+  "dgSpecHash": "pgvAKzS184Mym2Fpr4L+R25+K1J4YbOE3fqp2dNSSg+M8PxBR2B1i6FLLcIw2mpRGFYyxk1Zv6dbmpQU0cJdMA==",
   "success": true,
   "projectFilePath": "D:\\Users\\student\\Desktop\\GameDev\\game-development-project-2020-2021-DuFourOlivier\\GameDev_Olivier_DuFour_2EACL1\\GameDev_Olivier_DuFour_2EACL1\\GameDev_Olivier_DuFour_2EACL1.csproj",
   "expectedPackageFiles": [
@@ -124,7 +124,8 @@
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\system.xml.xdocument\\4.0.11\\system.xml.xdocument.4.0.11.nupkg.sha512",
     "C:\\Users\\student\\.nuget\\packages\\system.xml.xmldocument\\4.0.1\\system.xml.xmldocument.4.0.1.nupkg.sha512",
     "C:\\Users\\student\\.nuget\\packages\\system.xml.xpath\\4.0.1\\system.xml.xpath.4.0.1.nupkg.sha512",
-    "C:\\Users\\student\\.nuget\\packages\\system.xml.xpath.xdocument\\4.0.1\\system.xml.xpath.xdocument.4.0.1.nupkg.sha512"
+    "C:\\Users\\student\\.nuget\\packages\\system.xml.xpath.xdocument\\4.0.1\\system.xml.xpath.xdocument.4.0.1.nupkg.sha512",
+    "C:\\Users\\student\\.nuget\\packages\\tiledsharp\\1.0.1\\tiledsharp.1.0.1.nupkg.sha512"
   ],
   "logs": []
 }
