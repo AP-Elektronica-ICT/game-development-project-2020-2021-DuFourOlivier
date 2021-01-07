@@ -23,23 +23,23 @@ namespace GameDev_Olivier_DuFour_2EACL1.States
 
             var newGameButton = new Button(buttonTexture, buttonFont)
             {
-                Position = new Vector2(300, 200),
-                Text = "New Game",
+                Position = new Vector2(720, 300),
+                Text = "Level 1",
             };
 
             newGameButton.Click += NewGameButton_Click;
 
             var loadGameButton = new Button(buttonTexture, buttonFont)
             {
-                Position = new Vector2(300, 250),
-                Text = "Load Game",
+                Position = new Vector2(720, 350),
+                Text = "Level 2",
             };
 
             loadGameButton.Click += LoadGameButton_Click;
 
             var quitGameButton = new Button(buttonTexture, buttonFont)
             {
-                Position = new Vector2(300, 300),
+                Position = new Vector2(720, 400),
                 Text = "Quit Game",
             };
 
@@ -65,7 +65,7 @@ namespace GameDev_Olivier_DuFour_2EACL1.States
 
         private void LoadGameButton_Click(object sender, EventArgs e)
         {
-            Console.WriteLine("Load Game");
+            Console.WriteLine("Level 2");
         }
 
         private void NewGameButton_Click(object sender, EventArgs e)
