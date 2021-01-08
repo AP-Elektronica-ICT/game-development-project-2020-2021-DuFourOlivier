@@ -49,6 +49,7 @@ namespace GameDev_Olivier_DuFour_2EACL1.Input
             }
             return direction;
         }
+        /*Bron jumping code: http://flatformer.blogspot.com/2010/02/making-character-jump-in-xnac-basic.html */
         private Microsoft.Xna.Framework.Vector2 MoveVertical(KeyboardState key, Player player)
         {
             var direction = Vector2.Zero;

@@ -4,7 +4,9 @@ using Microsoft.Xna.Framework;
 using System;
 using System.Collections.Generic;
 using System.Text;
-
+/* Bronnen:
+Voor de CheckFutureMovements methode heb ik als inspiartiebron Ruben Simons(2EACL1) zijn code bekeken ivm zijn collisiondetection.
+link: https://github.com/AP-Elektronica-ICT/game-development-project-2020-2021-SimonsRuben/blob/master/GameDevProject/GameDevProject/Detections/CollisionDetection.cs */
 namespace GameDev_Olivier_DuFour_2EACL1.Collision
 {
    public class CollisionManager

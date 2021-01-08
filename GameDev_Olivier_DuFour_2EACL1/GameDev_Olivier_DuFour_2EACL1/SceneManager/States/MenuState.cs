@@ -12,7 +12,8 @@ using System.Diagnostics;
 namespace GameDev_Olivier_DuFour_2EACL1.States
 {
     public class MenuState : State
-    {
+    { /*Inspiratiebron: O. (2017, 18 juli). MonoGame Tutorial 013 - Game States (Main Menu). YouTube. https://www.youtube.com/watch?v=76Mz7ClJLoE&feature=youtu.be 
+         Deze was algemeen voor de SceneManager.*/
         private List<Component> _components;
         private Texture2D backgroundScreen;
         public MenuState(Game1 game, GraphicsDevice graphicsDevice, ContentManager content)
