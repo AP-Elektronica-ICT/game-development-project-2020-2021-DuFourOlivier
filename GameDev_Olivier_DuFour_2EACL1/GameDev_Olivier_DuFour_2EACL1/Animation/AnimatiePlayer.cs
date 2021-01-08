@@ -11,12 +11,10 @@ namespace GameDev_Olivier_DuFour_2EACL1.Animation
    public class AnimatiePlayer: Animation
     {
         private FramesPlayer Frames;
-
         public AnimatiePlayer(FramesPlayer frames)
         {
             this.Frames = frames;
         }
-           
         public override void Update(GameTime gameTime)
         {
             /* De idle naar left blijft wanner we terug naar links begeven*/
@@ -57,7 +55,6 @@ namespace GameDev_Olivier_DuFour_2EACL1.Animation
                 counter = 0;
             }
         }
-
         public void WalkRight(GameTime gameTime)
         {
             CurrentFrame = Frames.framesWalkRight[counter];
@@ -68,14 +65,11 @@ namespace GameDev_Olivier_DuFour_2EACL1.Animation
                 counter++;
                 frameMovement = 0;
             }
-
-
             if (counter >= Frames.framesWalkRight.Count)
             {
                 counter = 0;
             }
         }
-
         public void IdleLeft()
         {
             CurrentFrame = Frames.framesIdleLeft[0];

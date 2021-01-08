@@ -50,22 +50,18 @@ namespace GameDev_Olivier_DuFour_2EACL1.Frames
     private void AddFrameWalkRight(AnimationFrame animationFrame)
     {
         framesWalkRight.Add(animationFrame);
-
     }
         private void AddFrameWalkLeft(AnimationFrame animationFrame)
     {
         framesWalkLeft.Add(animationFrame);
-
     }
         private void AddFrameIdleLeft(AnimationFrame animationFrame)
     {
         framesIdleLeft.Add(animationFrame);
-
     }
         private void AddFrameIdleRight(AnimationFrame animationFrame)
     {
         framesIdleRight.Add(animationFrame);
-
     }
 }
 }

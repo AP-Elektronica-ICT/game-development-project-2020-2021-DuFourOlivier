@@ -25,10 +25,7 @@ namespace GameDev_Olivier_DuFour_2EACL1
        private IGameCommand moveCommand;
        public Rectangle CollisionRectangle { get; set; }
        private Rectangle _collisionRectangle;
-        private Blok blokje;
-
         public Vector2 Position { get ; set ; }
-
         public Player(Texture2D text, IInputReader reader)
         {
             postieLevel = new PlayerPosition();
@@ -38,34 +35,24 @@ namespace GameDev_Olivier_DuFour_2EACL1
             Position = postieLevel.Postions[GameState.level];
             this.inputReader = reader;
             moveCommand = new MoveCommand();
-
             _collisionRectangle = new Rectangle((int)Position.X, (int)Position.Y, 80, 120);
         }
-
         public void Update(GameTime gameTime)
         {
             var direction = inputReader.ReadInput(this);
-            Debug.WriteLine(direction);
             Move(direction);
             animatie.Update(gameTime);
             _collisionRectangle.X = (int)Position.X;
             _collisionRectangle.Y = (int)Position.Y;
             CollisionRectangle = _collisionRectangle;
-            Debug.WriteLine(CollisionRectangle);
         }
-
         private void Move(Vector2 direction)
         {
             moveCommand.Execute(this, direction,this);
         }
-
         public void Draw(SpriteBatch _spriteBatch)
         {
             _spriteBatch.Draw(playerTexture, Position,animatie.CurrentFrame.SourceRectangle , Color.White);
-            
-            
         }
-
-       
     }
 }

@@ -16,14 +16,11 @@ namespace GameDev_Olivier_DuFour_2EACL1
     {
         //gamestates
         private State _currentState;
-
         private State _nextState;
-
         public void ChangeState(State state)
         {
             _nextState = state;
         }
-
         private GraphicsDeviceManager _graphics;
         private SpriteBatch _spriteBatch;
         public Game1()
@@ -32,25 +29,18 @@ namespace GameDev_Olivier_DuFour_2EACL1
             Content.RootDirectory = "Content";
             IsMouseVisible = true;
         }
-
         protected override void Initialize()
         {
             IsMouseVisible = true;
-
             _graphics.PreferredBackBufferWidth = 1600;
             _graphics.PreferredBackBufferHeight = 960;
             _graphics.ApplyChanges();
             base.Initialize();
-
         }
-        
         protected override void LoadContent()
         {
-            
             _spriteBatch = new SpriteBatch(GraphicsDevice);
-           
             _currentState = new MenuState(this, _graphics.GraphicsDevice, Content);
-           
         }
         protected override void Update(GameTime gameTime)
         {
@@ -60,16 +50,13 @@ namespace GameDev_Olivier_DuFour_2EACL1
                 _nextState = null;
             }
             _currentState.Update(gameTime);
-            _currentState.PostUpdate(gameTime);
             base.Update(gameTime);
-
         }
 
         protected override void Draw(GameTime gameTime)
         {
             GraphicsDevice.Clear(Color.CornflowerBlue);
             _currentState.Draw(gameTime, _spriteBatch);
-
             base.Draw(gameTime);
         }
     }

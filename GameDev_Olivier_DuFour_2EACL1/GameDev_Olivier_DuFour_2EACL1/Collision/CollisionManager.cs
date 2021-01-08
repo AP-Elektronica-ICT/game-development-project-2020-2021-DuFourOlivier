@@ -12,7 +12,6 @@ namespace GameDev_Olivier_DuFour_2EACL1.Collision
         public static List<Blok> Wereld = new List<Blok>();
         public static List<Blok> traps = new List<Blok>();
         public static List<Blok> finish = new List<Blok>();
-
         public bool CheckCollision(Rectangle rect1, Rectangle rect2)
         {
             if (rect1.Intersects(rect2))
@@ -21,14 +20,13 @@ namespace GameDev_Olivier_DuFour_2EACL1.Collision
             }
             return false;
         }
-
         public bool CheckFuturMovements(Rectangle player)
         {
             foreach (var blok in Wereld)
             {
                 if (CheckCollision(player, blok.CollisionRectangle))
                 {
-                    KeyBoardReader.startY = blok.CollisionRectangle.Y - 140;
+                    KeyBoardReader.startY = blok.CollisionRectangle.Y - player.Height;
                     return true;
                 }
                 
@@ -41,7 +39,7 @@ namespace GameDev_Olivier_DuFour_2EACL1.Collision
             {
                 if (CheckCollision(player, blok.CollisionRectangle))
                 {
-                    KeyBoardReader.startY = blok.CollisionRectangle.Y - 140;
+                    KeyBoardReader.startY = blok.CollisionRectangle.Y - player.Height;
                     return true;
                 }
 
@@ -54,7 +52,7 @@ namespace GameDev_Olivier_DuFour_2EACL1.Collision
             {
                 if (CheckCollision(player, blok.CollisionRectangle))
                 {
-                    KeyBoardReader.startY = blok.CollisionRectangle.Y - 140;
+                    KeyBoardReader.startY = blok.CollisionRectangle.Y - player.Height;
                     return true;
                 }
 
