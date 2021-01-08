@@ -197,6 +197,10 @@
     <File>D:/Users/student/Desktop/GameDev/game-development-project-2020-2021-DuFourOlivier/GameDev_Olivier_DuFour_2EACL1/GameDev_Olivier_DuFour_2EACL1/Content/miscellaneous sprites/wood_slab_middle.png</File>
     <File>D:/Users/student/Desktop/GameDev/game-development-project-2020-2021-DuFourOlivier/GameDev_Olivier_DuFour_2EACL1/GameDev_Olivier_DuFour_2EACL1/Content/miscellaneous sprites/wood_slab_right.png</File>
     <File>D:/Users/student/Desktop/GameDev/game-development-project-2020-2021-DuFourOlivier/GameDev_Olivier_DuFour_2EACL1/GameDev_Olivier_DuFour_2EACL1/Content/miscellaneous sprites/wooden_plate.png</File>
+    <File>D:/Users/student/Desktop/GameDev/game-development-project-2020-2021-DuFourOlivier/GameDev_Olivier_DuFour_2EACL1/GameDev_Olivier_DuFour_2EACL1/Content/Songs/GameOver.mp3</File>
+    <File>D:/Users/student/Desktop/GameDev/game-development-project-2020-2021-DuFourOlivier/GameDev_Olivier_DuFour_2EACL1/GameDev_Olivier_DuFour_2EACL1/Content/Songs/introSong.mp3</File>
+    <File>D:/Users/student/Desktop/GameDev/game-development-project-2020-2021-DuFourOlivier/GameDev_Olivier_DuFour_2EACL1/GameDev_Olivier_DuFour_2EACL1/Content/Songs/Menu.mp3</File>
+    <File>D:/Users/student/Desktop/GameDev/game-development-project-2020-2021-DuFourOlivier/GameDev_Olivier_DuFour_2EACL1/GameDev_Olivier_DuFour_2EACL1/Content/Songs/Victory.mp3</File>
     <File>D:/Users/student/Desktop/GameDev/game-development-project-2020-2021-DuFourOlivier/GameDev_Olivier_DuFour_2EACL1/GameDev_Olivier_DuFour_2EACL1/Content/StartScherm.png</File>
     <File>D:/Users/student/Desktop/GameDev/game-development-project-2020-2021-DuFourOlivier/GameDev_Olivier_DuFour_2EACL1/GameDev_Olivier_DuFour_2EACL1/Content/tiles and background_foreground/background.png</File>
     <File>D:/Users/student/Desktop/GameDev/game-development-project-2020-2021-DuFourOlivier/GameDev_Olivier_DuFour_2EACL1/GameDev_Olivier_DuFour_2EACL1/Content/tiles and background_foreground/bg_0.png</File>
@@ -212,6 +216,10 @@
     <File>D:/Users/student/Desktop/GameDev/game-development-project-2020-2021-DuFourOlivier/GameDev_Olivier_DuFour_2EACL1/GameDev_Olivier_DuFour_2EACL1/Content/Victory.png</File>
   </SourceFiles>
   <DestFiles>
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
     <File xsi:nil="true" />
     <File xsi:nil="true" />
     <File xsi:nil="true" />

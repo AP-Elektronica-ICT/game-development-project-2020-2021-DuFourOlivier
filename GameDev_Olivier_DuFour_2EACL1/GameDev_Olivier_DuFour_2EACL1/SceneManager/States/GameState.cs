@@ -11,6 +11,7 @@ using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Content;
 using Microsoft.Xna.Framework.Graphics;
 using TiledSharp;
+using Microsoft.Xna.Framework.Media;
 
 namespace GameDev_Olivier_DuFour_2EACL1.States
 { /*Inspiratiebron: O. (2017, 18 juli). MonoGame Tutorial 013 - Game States (Main Menu). YouTube. https://www.youtube.com/watch?v=76Mz7ClJLoE&feature=youtu.be 
@@ -31,14 +32,19 @@ namespace GameDev_Olivier_DuFour_2EACL1.States
         private Texture2D texture, blokTexture;
         private Player player;
         private CollisionManager collisionManager;
+        private Song DuringGame;
+        private Song GameOverSound;
+        private Song VictorySound;
         public GameState(Game1 game, GraphicsDevice graphicsDevice, ContentManager content, int levelinput = 1)
           : base(game, graphicsDevice, content)
         {
+            MediaPlayer.Stop();
             collisionManager = new CollisionManager();
             bounds = new Rectangle(0, 0, 0, 0);
             map = new List<TmxMap>();
             level = levelinput - 1;
             LoadContent();
+            MediaPlayer.Play(DuringGame);
         }
         public  void LoadContent()
         {
@@ -69,6 +75,9 @@ namespace GameDev_Olivier_DuFour_2EACL1.States
                 CollisionManager.finish.Add(new Blok(new Rectangle((int)p.X, (int)p.Y, (int)p.Width, (int)p.Height)));
 
             }
+            DuringGame = _content.Load<Song>("Songs/introSong");
+            GameOverSound = _content.Load<Song>("Songs/GameOver");
+            VictorySound = _content.Load<Song>("Songs/Victory");
         }
         private void InitializeGameObjects()
         {
@@ -133,11 +142,15 @@ namespace GameDev_Olivier_DuFour_2EACL1.States
                                    }
                 else if (level == map.Count -1 )
                 {
+                    MediaPlayer.Stop();
+                    MediaPlayer.Play(VictorySound);
                     _game.ChangeState(new VictoryState(_game, _graphicsDevice, _content));
                 }
             }
             else if (collisionManager.CheckTrap(player.CollisionRectangle))
             {
+                MediaPlayer.Stop();
+                MediaPlayer.Play(GameOverSound);
                 _game.ChangeState(new DeathState(_game, _graphicsDevice, _content));
             }
 

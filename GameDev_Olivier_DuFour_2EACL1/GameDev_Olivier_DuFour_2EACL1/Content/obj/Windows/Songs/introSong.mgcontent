@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PipelineBuildEvent xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <SourceFile>D:/Users/student/Desktop/GameDev/game-development-project-2020-2021-DuFourOlivier/GameDev_Olivier_DuFour_2EACL1/GameDev_Olivier_DuFour_2EACL1/Content/Songs/introSong.mp3</SourceFile>
+  <SourceTime>2021-01-08T16:30:12.0141411+01:00</SourceTime>
+  <DestFile>D:/Users/student/Desktop/GameDev/game-development-project-2020-2021-DuFourOlivier/GameDev_Olivier_DuFour_2EACL1/GameDev_Olivier_DuFour_2EACL1/Content/bin/Windows/Songs/introSong.xnb</DestFile>
+  <DestTime>2021-01-08T16:43:12.4972725+01:00</DestTime>
+  <Importer>Mp3Importer</Importer>
+  <ImporterTime>2020-08-10T16:17:54+02:00</ImporterTime>
+  <Processor>SongProcessor</Processor>
+  <ProcessorTime>2020-08-10T16:17:54+02:00</ProcessorTime>
+  <Parameters>
+    <Key>Quality</Key>
+    <Value>Best</Value>
+  </Parameters>
+  <Dependencies />
+  <BuildAsset />
+  <BuildOutput>
+    <string>D:/Users/student/Desktop/GameDev/game-development-project-2020-2021-DuFourOlivier/GameDev_Olivier_DuFour_2EACL1/GameDev_Olivier_DuFour_2EACL1/Content/bin/Windows/Songs/introSong.wma</string>
+  </BuildOutput>
+</PipelineBuildEvent>

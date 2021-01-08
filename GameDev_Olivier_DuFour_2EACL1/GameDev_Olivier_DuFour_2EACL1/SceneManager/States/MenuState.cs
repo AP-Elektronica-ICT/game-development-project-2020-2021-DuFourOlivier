@@ -8,6 +8,7 @@ using Microsoft.Xna.Framework.Content;
 using Microsoft.Xna.Framework.Graphics;
 using GameDev_Olivier_DuFour_2EACL1.Controls;
 using System.Diagnostics;
+using Microsoft.Xna.Framework.Media;
 
 namespace GameDev_Olivier_DuFour_2EACL1.States
 {
@@ -16,12 +17,16 @@ namespace GameDev_Olivier_DuFour_2EACL1.States
          Deze was algemeen voor de SceneManager.*/
         private List<Component> _components;
         private Texture2D backgroundScreen;
+        private Song introSong;
         public MenuState(Game1 game, GraphicsDevice graphicsDevice, ContentManager content)
           : base(game, graphicsDevice, content)
         {
+            MediaPlayer.Stop();
             var buttonTexture = _content.Load<Texture2D>("Controls/ThrButton");
             var buttonFont = _content.Load<SpriteFont>("Fonts/Font1");
             backgroundScreen = _content.Load<Texture2D>("StartScherm");
+            introSong = _content.Load<Song>("Songs/Menu");
+            MediaPlayer.Play(introSong);
             var Level1Button = new Button(buttonTexture, buttonFont)
             {
                 Position = new Vector2(720, 450),

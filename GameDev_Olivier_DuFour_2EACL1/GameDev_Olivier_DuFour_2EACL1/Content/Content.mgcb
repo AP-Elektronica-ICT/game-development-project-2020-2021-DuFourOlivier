@@ -2334,6 +2334,30 @@
 /processorParam:TextureFormat=Color
 /build:miscellaneous sprites/wooden_plate.png
 
+#begin Songs/GameOver.mp3
+/importer:Mp3Importer
+/processor:SongProcessor
+/processorParam:Quality=Best
+/build:Songs/GameOver.mp3
+
+#begin Songs/introSong.mp3
+/importer:Mp3Importer
+/processor:SongProcessor
+/processorParam:Quality=Best
+/build:Songs/introSong.mp3
+
+#begin Songs/Menu.mp3
+/importer:Mp3Importer
+/processor:SongProcessor
+/processorParam:Quality=Best
+/build:Songs/Menu.mp3
+
+#begin Songs/Victory.mp3
+/importer:Mp3Importer
+/processor:SongProcessor
+/processorParam:Quality=Best
+/build:Songs/Victory.mp3
+
 #begin StartScherm.png
 /importer:TextureImporter
 /processor:TextureProcessor
