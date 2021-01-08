@@ -16,7 +16,9 @@ using Microsoft.Xna.Framework.Media;
 namespace GameDev_Olivier_DuFour_2EACL1.States
 { /*Inspiratiebron: O. (2017, 18 juli). MonoGame Tutorial 013 - Game States (Main Menu). YouTube. https://www.youtube.com/watch?v=76Mz7ClJLoE&feature=youtu.be 
      Deze was algemeen voor de SceneManager.
-    Inspiratiebron voor TiledSharp: Lioncat Dev Studio. (2020, 9 oktober). Loading Tile maps monogame 3.8 and TiledSharp. YouTube. https://www.youtube.com/watch?v=iwc7COCLhkA&feature=youtu.be */
+    Inspiratiebron voor TiledSharp: Lioncat Dev Studio. (2020, 9 oktober). Loading Tile maps monogame 3.8 and TiledSharp. YouTube. https://www.youtube.com/watch?v=iwc7COCLhkA&feature=youtu.be 
+    Inspiratiebron voor muziek: Hawkes, C. (2014, 27 september). MonoGame - How to play background music in MonoGame. YouTube. https://www.youtube.com/watch?v=Vw-UCTLhIFw&feature=youtu.be 
+   */
     public class GameState : State
     {
         // Tilesharp

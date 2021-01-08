@@ -14,7 +14,8 @@ namespace GameDev_Olivier_DuFour_2EACL1.States
 {
     public class MenuState : State
     { /*Inspiratiebron: O. (2017, 18 juli). MonoGame Tutorial 013 - Game States (Main Menu). YouTube. https://www.youtube.com/watch?v=76Mz7ClJLoE&feature=youtu.be 
-         Deze was algemeen voor de SceneManager.*/
+         Deze was algemeen voor de SceneManager.
+        Inspiratiebron voor muziek: Hawkes, C. (2014, 27 september). MonoGame - How to play background music in MonoGame. YouTube. https://www.youtube.com/watch?v=Vw-UCTLhIFw&feature=youtu.be */
         private List<Component> _components;
         private Texture2D backgroundScreen;
         private Song introSong;
